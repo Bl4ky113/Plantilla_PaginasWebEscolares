@@ -14,8 +14,8 @@ Este equipo se encarga de todo aspecto y funcionalidad visual del proyecto, form
 
 * ####Desarrolladores Frontend Principales:
   * Martín Steven Hernández Ortiz:
-  - Tel: 57+ 313 3391259;
-  - Correo Personal: martinstevenhernandezortiz@gmail.com;
+  Tel: 57+ 313 3391259;
+  Correo Personal: martinstevenhernandezortiz@gmail.com;
 
   * ...
 
