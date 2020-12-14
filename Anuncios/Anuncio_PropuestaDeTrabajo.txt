@@ -3,9 +3,9 @@ Buenas Estimados Compañeros.
 Estamos buscando a programadores Junior o inferior, para la realización de un proyecto de programación de mediano a largo plazo.
 
 El proyecto consiste en una Plantilla dinamica para Paginas Web Escolares, que van a variar el contenido según la institución.
-Esto es necesario porque en Colombia las Paginas Web Escolares son muy escasas, las existentes son muy precarias y sin soporte & ayuda O soporte a plataformas mobiles.
+Esto es necesario porque en Colombia las Paginas Web Escolares son muy escasas, las existentes son muy precarias y sin soporte & ayuda O soporte a plataformas moviles.
 
-El objetivo principal del proyecto es brindar mejor educación Online a los estudiantes, usando paginas Web más comodas de usar tanto para los estudiantes, como a los Profesores en 2 plataformas, web de escritorio y web de mobiles.
+El objetivo principal del proyecto es brindar mejor educación Online a los estudiantes, usando paginas Web más comodas de usar tanto para los estudiantes, como a los Profesores en 2 plataformas, web de escritorio y web de moviles.
 
 Las capacidades & competencias minimas para entrar en el proyecto son:
 
