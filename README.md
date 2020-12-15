@@ -25,17 +25,21 @@ Nuestro equipo esta formado por dos grupos:
 
 Este equipo se encarga de todo aspecto y funcionalidad visual del proyecto, formando y desarrollando la parte del proyecto que los usuarios (estudiantes, profesores, acudientes), van a poder ver y interactuar en la pagina web, este equipo se divide en:
 
-* #### Desarrolladores Frontend Principales:
-  * ##### Martín Steven Hernández Ortiz:
-  Tel: 57+ 313 3391259;
-  Correo Personal: martinstevenhernandezortiz@gmail.com;
+* ### Desarrolladores Frontend Principales:
+  * #### Martín Steven Hernández Ortiz:
+    Tel: +57 313 3391259;
+    Correo Personal: martinstevenhernandezortiz@gmail.com;
 
   * ...
 
-* #### Desarrolladores Frontend:
+* ### Desarrolladores Frontend (Web):
+  * #### Bryan Schneider Rojas Castillo:
+    Tel: +57 317 8108802;
+    Correo Personal: bryanschneider2025@gmail.com;
+
   * ...
 
-* #### Desarrolladores Frontend (moviles):
+* ### Desarrolladores Frontend (moviles):
   * ...
 
 ### Backend:
