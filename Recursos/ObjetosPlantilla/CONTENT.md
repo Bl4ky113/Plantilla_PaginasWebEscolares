@@ -2,7 +2,7 @@
 
 En este directorio estaran todos los **archivos básicos personalizables** de las **Instituciones**
 
-### Ejemplo:
+## Ejemplo:
 
 * Iconos.
 * Escudos.
