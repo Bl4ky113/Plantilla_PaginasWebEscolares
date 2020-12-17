@@ -34,7 +34,7 @@ Este equipo se encarga de todo aspecto y funcionalidad visual del proyecto, form
 
   * ...
 
-* ### Desarrolladores Frontend (desk):
+* ### Desarrolladores Frontend:
   * #### Bryan Schneider Rojas Castillo:
     -  Tel: +57 317 8108802;
     -  Correo Personal: bryanschneider2025@gmail.com;
@@ -50,13 +50,16 @@ Este equipo se encarga de todo aspecto y funcionalidad visual del proyecto, form
     -  Github: ThomSok;
     -  Twitter: @ThomSok_twt;
 
-    *#### María Valentina Carvajal:
+    * #### María Valentina Carvajal:
       - Tel: +57 3053256894;
       - Correo Personal: valecame0904@gmail.com;
 
-  * ...
+    * #### Samuel Rico Osorio:
+      - Tel: +57 304 6562874;
+      - Correo Personal: samuelricoosorio@gmail.com;
+      - Github: SamuelRico;
+      
 
-* ### Desarrolladores Frontend (moviles):
   * ...
 
 ### Backend:
