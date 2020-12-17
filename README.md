@@ -9,8 +9,8 @@ De esta branch van a salir otras branches, para que todos podamos trabajar de un
 
 ## Contenidos
 
-* [ ] Header (En proceso).
-* [ ] Footer.
+* [ ] Header (En proceso). (talvez repite)
+* [ ] Footer. (repite)
 * [ ] Content:
   * [ ] ...
 * [ ] Nav Menu:
