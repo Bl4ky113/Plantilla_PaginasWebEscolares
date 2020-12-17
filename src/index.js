@@ -25,6 +25,7 @@ app.use(cookieParser());
 
 //Routes
 app.use(require('./routes/'));
+app.use(require('./routes/login_signup'));
 
 //Public
 app.use(express.static(path.join(__dirname, 'public')));

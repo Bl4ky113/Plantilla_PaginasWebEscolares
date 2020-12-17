@@ -6,6 +6,8 @@ El proyecto consiste en formar una plantilla para las paginas web de **instituci
 
 ## Objetivos del Proyecto:
 
+);
+
 * Para todos los Usuarios:
   * [ ] Tener Pagina Principal.
   * [ ] Tener Pagina de Anuncios.

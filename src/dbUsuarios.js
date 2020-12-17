@@ -1,11 +1,7 @@
 const mysql = require('mysql');
 const {promisify} = require('util');
-const {host} = require('./config');
+const {database} = require('./config');
 
-const database = {
-    
-}
- 
 const pool = mysql.createPool(database); 
 
 pool.getConnection((err, connection)=>{
