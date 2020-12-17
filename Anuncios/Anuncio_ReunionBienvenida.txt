@@ -1,3 +1,5 @@
+16/12/2020;
+
 En el Email:
 
 ¡Hola compañeros! Les quiero dar la bienvenida a el Proyecto de Plantillas para Páginas Escolares o PPE.
@@ -10,5 +12,82 @@ La reunión iniciara a las 4:30 PM del 16/12/2020. No Faltes!!!
 En la reunion:
 
 --check de auido de todos, tener un buen fondo, sin interrupciones, preferiblemente estatico--
+--Esperamos un buen rato a el Cofounder Bryan--
 
 Listo vamos a iniciar.
+
+(Misión)
+
+Nosotros somos pequeños muy pequeños emprendedores, pero tenemos la idea de
+mejorar la calidad de educación Online de varias instituciones academicas.
+
+Como queremos mejorar esta educación Online, brindandole a estas instituciones
+una plantilla personalizable por ellos, para que puedan subir su informacion,
+trabajos, anuncios escolares, entre otros.
+
+Estas plantilla básica personalizable va a ser principalmente "estatica" y tendra limitaciones en
+el código de CSS y JS
+
+No queremos monetizar AÚN con este proyecto, porque es más que obvio que un colegio
+no va a querer pagar 1.2 Millones que vale una página web en promedio en Colombia.
+
+Eso haciendonos daño a nosotros como emprendedores y como estudiantes, ya que ellos van a
+tomar el camino más barato y facil, pero no el mejor para los estudiantes en varios casos.
+
+
+(Visión)
+
+Nosotros queremos ver crecer este emprendimiento como una agencia de Programadores, diseñadores y Desarrolladores web.
+
+Para poder capitalizar en el proyecto, podemos incluirle nuevas plantillas de paga a los colegios
+usando diferentes y más bonitas tecnologias. O podemos agregarle nuevas funcionalidades a las páginas web escolares.
+
+Cual es el beneficio de que compren nuestro producto y que no usen otras plataformas como Edmodo???
+
+El mayor beneficio de nuestras plantillas web, es que la institución no se adapta a la plataforma, pero
+la plataforma se adapta a la institución.
+
+Nos gustaria llegar a una gran parte de colegios en TODO el pais. Y tener un vinculo con el
+gobierno & Ministerio de las TIC
+
+Obviamente creo que para este momento ya podriamos tener salario fijo para los integrantes de cada equipo (Front y Back)
+Pero podemos estar en este estado nos va a llevar mucho tiempo
+
+(Como vamos a trabajar)
+
+Vamos a trabajar en el repositorio de Github https://github.com/Bl4ky113/Plantilla_PaginasWebEscolares
+Deben enviarme un mensaje para que los ingrese como colaboradores a el Repositorio
+
+En el proyecto vamos a trabajar con Branches, las branches son diferentes ramas del trabajo. Ejemplo
+
+* En la branch Master, solo los mayormente capacitados en Git, Github y en su equipo de desarrollo, podran hacer merge a esta rama.
+
+--------------------------------- Master
+  \
+    ------------------- Branches de base de desarrollo
+
+
+* Las branches base de desarrollo, por ejemplo la branch PaginaPrincipal, se va a mantener el desarrollo de esta misma, pero no se va a realizar ahí mismo, me explico
+
+--------------------------- Master
+  \
+    ----------------------- PaginaPrincipal
+      \   \   \   \   \
+      branches de desarrollo
+
+En las branches de desarrollo, nosotros vamos a cumplir con objetivos especificos, tipo en estra branch el footer, en esta el header, etc.
+
+Y despues de hacer estos objetivos, hacemos un merge a la branch de base de desarrollo, en este caso PaginaPrincipal.
+
+//Si este sistema genera conflictos con el código, necesito que me avisen lo mayormente pronto posible, para poder implmentar un arreglo o un otro sistema
+
+Los horarios en que vamos a trabajar, pueden ser totalmente flexibles, dependiendo de sus necesidades.
+
+(horarios)
+
+Pero algo totalmente necesario es aprender en cada secion de trabajos. Si trabajar 2 horas minimo 1 debes dedicarla a aprender sobre programación
+y que esta informacion se pueda incluir a este proyecto a algun proyecto personal si deseas.
+
+Pero debes nunca dejar de aprender. Ademas es un buen habito de vida
+
+Yo estare trabajando diario desde las 12 AM hasta las 8 PM, depronto algunas veces más temprano o más tarde, pero estare disponible entre esos dias.
