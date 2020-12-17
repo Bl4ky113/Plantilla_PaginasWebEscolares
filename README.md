@@ -27,15 +27,32 @@ Este equipo se encarga de todo aspecto y funcionalidad visual del proyecto, form
 
 * ### Desarrolladores Frontend Principales:
   * #### Martín Steven Hernández Ortiz:
-    Tel: +57 313 3391259;
-    Correo Personal: martinstevenhernandezortiz@gmail.com;
+    -  Tel: +57 313 3391259;
+    -  Correo Personal: martinstevenhernandezortiz@gmail.com;
+    -  Github: Bl4ky113;
+    -  Twitter: @bl4ky113;
 
   * ...
 
-* ### Desarrolladores Frontend (Web):
+* ### Desarrolladores Frontend (desk):
   * #### Bryan Schneider Rojas Castillo:
-    Tel: +57 317 8108802;
-    Correo Personal: bryanschneider2025@gmail.com;
+    -  Tel: +57 317 8108802;
+    -  Correo Personal: bryanschneider2025@gmail.com;
+
+  * #### Elkin Samir Angulo Panameño:
+    -  Tel: +57 3136961050;
+    -  Correo Personal: elkinsamir643@gmail.com;
+    -  Github: Paelsam31;
+
+  * #### Thomas Gómez González:
+    -  Tel: +57 319 5945007
+    -  Correo Personal: tgomezgonzalez10@gmail.com;
+    -  Github: ThomSok;
+    -  Twitter: @ThomSok_twt;
+
+    *#### María Valentina Carvajal:
+      - Tel: +57 3053256894;
+      - Correo Personal: valecame0904@gmail.com;
 
   * ...
 
@@ -44,13 +61,20 @@ Este equipo se encarga de todo aspecto y funcionalidad visual del proyecto, form
 
 ### Backend:
 
-Este equpo se encarga de todo aspecto y funcionalidad de la funcionalidad de la parte no visual del proyecto (servidor, dominio web, base de datos, entre otros), este equipo se divide en:
+Este equpo se encarga de todo aspecto y funcionalidad de la funcionalidad de la parte no visual del proyecto (servidor, dominio web, base de datos, entre otros):
 
-* ### Desarrolladores Principales:
-  * ...
+* ### Desarrolladores:
+  * #### Alex Santiago Durango:
+    - Tel: +57 3154770872;
+    - Correo Personal: alex.durango2303@gmail.com;
+    - Github: AlexDurango;
 
-* ### Desarrolladores Backend (servidor):
-  * ...
+  * #### Juan Esteban Fonseca:
+    - Tel: +57 3228127558;
+    - Correo Personal: juanestebanfonsecaordonez@gmail.com;
 
-* ### Desarrolladores Backend (Base de Datos):
+  * #### Jesús Garcia:
+    - Tel: +57 300 8577684;
+    - Correo Personal: jesusd280147@gmail.com;
+
   * ...
