@@ -60,8 +60,8 @@ Este equipo se encarga de todo aspecto y funcionalidad visual del proyecto, form
 ### Backend:
 
 Este equpo se encarga de todo aspecto y funcionalidad de la funcionalidad de la parte no visual del proyecto (servidor, dominio web, base de datos, entre otros):
+* ### Desarrolladores Backend:
 
-* ### Desarrolladores:
   * #### Alex Santiago Durango:
     - Tel: +57 3154770872
     - Correo Personal: alex.durango2303@gmail.com
