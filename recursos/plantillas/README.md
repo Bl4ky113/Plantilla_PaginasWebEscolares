@@ -2,12 +2,12 @@
 
 En este directorio estaran todos los **archivos básicos personalizables** de las **Instituciones**
 
-## Ejemplo:
+## Ejemplos:
 
-* Iconos.
-* Escudos.
-* Banderas.
-* Colores primarios.
-* Colores Secundarios.
+    -Iconos
+    -Escudos
+    -Banderas
+    -Colores primarios
+    -Colores Secundarios
 
 Entre otros...
