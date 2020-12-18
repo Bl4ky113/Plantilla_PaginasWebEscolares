@@ -4,10 +4,10 @@ En este directorio estaran todos los **archivos básicos personalizables** de la
 
 ## Ejemplos:
 
-    -Iconos
-    -Escudos
-    -Banderas
-    -Colores primarios
-    -Colores Secundarios
+- Iconos
+- Escudos
+- Banderas
+- Colores primarios
+- Colores Secundarios
 
 Entre otros...
