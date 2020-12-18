@@ -6,4 +6,4 @@ En este README se va a hacer un breve resumen del estilo o diseño de estos Styl
 
 ## Styles:
  
- -
+ * ...
