@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("Añadir Imagen");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+}
+.enca {
+  /*Aqui editas el color del encabezado*/
+  background: rgba(0, 123, 0, 0.623);
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  position: fixed;
+}
+.wrapper {
+  width: 90%;
+  max-width: 1180px;
+  margin: auto;
+  overflow: hidden;
+}
+.logo {
+  color: #fff;
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 70px;
+  float: left;
+}
+.left {
+  float: left;
+}
+.logotext {
+  text-decoration: none;
+  text-decoration-color: none;
+}
+nav {
+  position: relative;
+  left: 620px;
+  top: 5px;
+}
+nav a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 20px 10px;
+  line-height: normal;
+  font-size: 16px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+nav a:hover {
+  color: #33cccc;
+  border-bottom: 5px solid #33cccc;
+}
+/*Responsing Beta*/
+/* @media only screen and (min-width: 400px) and (max-width: 767px) {
+  .enca {
+    height: 70px;
+  }
+  .logo {
+    font-size: 300px;
+    margin-left: 130;
+    margin-top: -15px;
+  }
+  nav {
+    margin-top: -40px;
+    transform: translateX(-3%);
+  }
+} */

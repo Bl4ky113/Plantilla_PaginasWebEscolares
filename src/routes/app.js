@@ -4,7 +4,7 @@ const cookieParser = require('cookie-parser');
 const pool = require('../dbUsuarios');
 
 router.get('/home', (req, res)=>{
-    res.send('hola mundo, en home');
+    res.render('home/home.hbs', {showStyleNav: true});
 });
 
 router.get('/contactos', (req, res)=>{

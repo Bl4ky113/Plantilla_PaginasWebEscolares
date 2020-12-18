@@ -1,0 +1,37 @@
+{{> navigation}} {{!-- este archivo de navigation se encuentra en views/partials/navigation.hbs --}}
+
+{{!-- Aqui se supone se trabajara todo lo que incluye el home
+      a excepcion de la navegacon y el footer que estan en un
+      archivo a parte, para editar el css de este archivo vallan
+      a public/css/home.css y el js de este archivo se encuentra en
+      public/js/home.js
+--}}
+
+{{> footer}} {{!-- este archivo de navigation se encuentra en views/partials/footer.hbs --}}
+
+{{!-- PEQUEÑA EXPLICACION DE QUE CARAJOS ES .hbs:
+
+    esto es simplemente igual al html, solo que un poco mejorado, en la carpeta views, es en donde
+    esta todo el html, el css se encuentra en la carpeta public/css y el js en la carpeta
+    public/js...
+
+    dentro de views pueden crear las carpetas que se les de la gana, por ejemplo:
+    si este proyecto fuera de mensajeria podrian crear una carpeta llamada "mensajeria", la cual
+    por dentro tenga la vista de mensajeria.hbs añadirMensaje.hbs eliminarMensajes.hbs y todas
+    las vistas que quieran...
+
+    hay dos carpetas que siempre van a estar, que son las de layouts y las de partials. en las de
+    partial esta todo el codigo html que es reciclado, osea que se utilizan en dos o mas partes,
+    como primer ejemplo tienen el footer y la navigation que se utilizan en varias partes.
+
+    para importar un archivo de la carpeta partials la sintaxis es la siguiente:
+
+    {{> miArchivo}}
+
+    con esta sintaxis pueden importar cualquier archivo QUE ESTE DENTRO DE LA
+    CARPETA DE PARTIALS...
+
+    eso es mas que suficiente, tambien se puede mesclar el js con el html pero eso
+    sera otro dia que aprendan digo shio
+
+ --}}
