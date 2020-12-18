@@ -1,3 +1,0 @@
-#Ignorar los modulos de node, para que solo se descargen una vez en cada persona.
-
-/node_modules/
