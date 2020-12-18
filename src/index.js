@@ -29,23 +29,23 @@ app.use(cookieParser());
 app.use(require('./routes/'));
 app.use(require('./routes/login_signup'));
 
-app.use('/app',function (req, res, next){
+// app.use('/app',function (req, res, next){
 
-    const {cookies} = req;
+//     const {cookies} = req;
  
-    if('documentoPPE' in cookies && 'passPPE' in cookies){
-        pool.getConnection((err, connection)=>{
-            if(err){
-                res.redirect('/login');
-            }
-            else{
-                next();
-            }
-        });
-    }else{
-        res.redirect('/kim');
-    }
-});
+//     if('documentoPPE' in cookies && 'passPPE' in cookies){
+//         pool.getConnection((err, connection)=>{
+//             if(err){
+//                 res.redirect('/login');
+//             }
+//             else{
+//                 next();
+//             }
+//         });
+//     }else{
+//         res.redirect('/kim');
+//     }
+// });
 
 //sdmañsdma
 app.use('/app', require('./routes/app'));
