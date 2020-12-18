@@ -18,6 +18,7 @@ router.post("/signup", (req, res) => {
   let {
     nombre,
     correo,
+    numTelefono,
     password,
     pass2,
     documento,
@@ -28,16 +29,20 @@ router.post("/signup", (req, res) => {
 
   nombre = nombre.trim();
   correo = correo.trim();
+  numTelefono = numTelefono.trim();
   password = password.trim();
   pass2 = pass2.trim();
   documento = documento.trim();
   TD = TD.trim();
   rol = rol.trim();
   institucion = institucion.trim();
+   
+  console.log("Número de telefono ",numTelefono)
 
   if (
     nombre === "" ||
     correo === "" ||
+    numTelefono === "" ||
     password === "" ||
     pass2 === "" ||
     documento === "" ||
@@ -54,6 +59,7 @@ router.post("/signup", (req, res) => {
       if (
         validarSimbolosString(nombre) &&
         validarSimbolosString(correo) &&
+        validarSimbolosString(numTelefono) &&
         validarSimbolosString(password) &&
         validarSimbolosString(pass2) &&
         validarSimbolosString(documento) &&
@@ -104,6 +110,7 @@ router.post("/signup", (req, res) => {
                               {
                                 nombreUsuario: nombre,
                                 correoUsuario: correo,
+                                numeroTelefono: numTelefono,
                                 passUsuario: passEncriptada,
                                 numDocumento: documento,
                                 tipoDocumento: TD,
