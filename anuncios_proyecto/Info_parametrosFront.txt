@@ -1,0 +1,15 @@
+los nombres de los parametros que tienen que enviar a /signup son:
+
+nombre,
+correo,
+numTelefono,
+password,
+pass2,
+documento,
+TD,
+rol,
+institucion.
+
+el servidor siempre responde con una variable de error, si esta en true esa variable viene acompañada
+de otra llamada mensaje, ya ustedes veran si imprimen el mensaje o que, y si la variable esta en false
+significa que todo salio bien
