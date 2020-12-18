@@ -1,4 +1,4 @@
-# Plantilla de Paginas Web Escolares.
+# Plantilla de Paginas Web Escolares
 
 ## ¿En que consiste el Proyecto?:
 
@@ -27,40 +27,35 @@ Este equipo se encarga de todo aspecto y funcionalidad visual del proyecto, form
 
 * ### Desarrolladores Frontend Principales:
   * #### Martín Steven Hernández Ortiz:
-    -  Tel: +57 313 3391259;
-    -  Correo Personal: martinstevenhernandezortiz@gmail.com;
-    -  Github: Bl4ky113;
-    -  Twitter: @bl4ky113;
-
-  * ...
+    -  Tel: +57 313 3391259
+    -  Correo Personal: martinstevenhernandezortiz@gmail.com
+    -  Github: Bl4ky113
+    -  Twitter: @bl4ky113
 
 * ### Desarrolladores Frontend:
   * #### Bryan Schneider Rojas Castillo:
-    -  Tel: +57 317 8108802;
-    -  Correo Personal: bryanschneider2025@gmail.com;
+    -  Tel: +57 317 8108802
+    -  Correo Personal: bryanschneider2025@gmail.com
 
   * #### Elkin Samir Angulo Panameño:
-    -  Tel: +57 3136961050;
-    -  Correo Personal: elkinsamir643@gmail.com;
-    -  Github: Paelsam31;
+    -  Tel: +57 3136961050
+    -  Correo Personal: elkinsamir643@gmail.com
+    -  Github: Paelsam31
 
   * #### Thomas Gómez González:
     -  Tel: +57 319 5945007
-    -  Correo Personal: tgomezgonzalez10@gmail.com;
-    -  Github: ThomSok;
-    -  Twitter: @ThomSok_twt;
+    -  Correo Personal: tgomezgonzalez10@gmail.com
+    -  Github: ThomSok
+    -  Twitter: @ThomSok_twt
 
-    * #### María Valentina Carvajal:
-      - Tel: +57 3053256894;
-      - Correo Personal: valecame0904@gmail.com;
+  * #### María Valentina Carvajal:
+    - Tel: +57 3053256894
+    - Correo Personal: valecame0904@gmail.com
 
-    * #### Samuel Rico Osorio:
-      - Tel: +57 304 6562874;
-      - Correo Personal: samuelricoosorio@gmail.com;
-      - Github: SamuelRico;
-      
-
-  * ...
+  * #### Samuel Rico Osorio:
+    - Tel: +57 304 6562874
+    - Correo Personal: samuelricoosorio@gmail.com
+    - Github: SamuelRico
 
 ### Backend:
 
@@ -68,16 +63,14 @@ Este equpo se encarga de todo aspecto y funcionalidad de la funcionalidad de la 
 
 * ### Desarrolladores:
   * #### Alex Santiago Durango:
-    - Tel: +57 3154770872;
-    - Correo Personal: alex.durango2303@gmail.com;
-    - Github: AlexDurango;
+    - Tel: +57 3154770872
+    - Correo Personal: alex.durango2303@gmail.com
+    - Github: AlexDurango
 
   * #### Juan Esteban Fonseca:
-    - Tel: +57 3228127558;
-    - Correo Personal: juanestebanfonsecaordonez@gmail.com;
+    - Tel: +57 3228127558
+    - Correo Personal: juanestebanfonsecaordonez@gmail.com
 
   * #### Jesús Garcia:
-    - Tel: +57 300 8577684;
-    - Correo Personal: jesusd280147@gmail.com;
-
-  * ...
+    - Tel: +57 300 8577684
+    - Correo Personal: jesusd280147@gmail.com
