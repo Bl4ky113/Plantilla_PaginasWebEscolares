@@ -6,4 +6,6 @@ Esta es una lista de las librerias y un breve resumen del uso de esta en el proy
 
 ## Librerias:
 
+* Node.js
+
 * ...
