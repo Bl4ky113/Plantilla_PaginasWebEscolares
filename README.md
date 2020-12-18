@@ -49,6 +49,12 @@ Este equipo se encarga de todo aspecto y funcionalidad visual del proyecto, form
     -  Correo Personal: tgomezgonzalez10@gmail.com;
     -  Github: ThomSok;
     -  Twitter: @ThomSok_twt;
+    
+  * #### Juan Esteban Arango:
+    - Tel: +57 3233725613;
+    - Correo Personal: juaneste687@gmail.com;
+    - Github: JuanEs-az;
+
 
   * #### María Valentina Carvajal:
     - Tel: +57 3053256894;
