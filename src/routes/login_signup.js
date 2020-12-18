@@ -11,7 +11,7 @@ router.get("/signup", (req, res) => {
 });
 
 router.get("/login", (req, res) => {
-  res.render("");
+  res.send("hola mundo");
 });
 
 router.post("/signup", (req, res) => {
@@ -36,8 +36,6 @@ router.post("/signup", (req, res) => {
   TD = TD.trim();
   rol = rol.trim();
   institucion = institucion.trim();
-   
-  console.log("Número de telefono ",numTelefono)
 
   if (
     nombre === "" ||
@@ -60,8 +58,6 @@ router.post("/signup", (req, res) => {
         validarSimbolosString(nombre) &&
         validarSimbolosString(correo) &&
         validarSimbolosString(numTelefono) &&
-        validarSimbolosString(password) &&
-        validarSimbolosString(pass2) &&
         validarSimbolosString(documento) &&
         validarSimbolosString(TD) &&
         validarSimbolosString(rol) &&
@@ -86,18 +82,19 @@ router.post("/signup", (req, res) => {
                   });
                 } else {
                   pool.query(
-                    `SELECT * FROM instituciones WHERE nombreInstitucion = '${institucion}'`,
+                    `SELECT * FROM instituciones WHERE nombreInstitucion = ?`,
+                    [institucion],
                     (error, results, fields) => {
                       if (error) {
                         connection.destroy();
                         res.send({
                           error: true,
                           mensaje:
-                            "Lo sentimos, ha ocurrido un error, intente de nuevo query institcuion",
+                            "Lo sentimos, ha ocurrido un error, intente de nuevo.",
                         });
                       } else {
                         if (results.length === 0) {
-                            connection.destroy();
+                          connection.destroy();
                           res.send({
                             error: true,
                             mensaje:
@@ -120,15 +117,55 @@ router.post("/signup", (req, res) => {
                             ],
                             (error, results, fields) => {
                               if (error) {
-                                connection.destroy();
-                                res.send({
-                                  error,
-                                });
+                                if (error.errno === 1062) {
+                                  connection.destroy();
+                                  res.send({
+                                    error: true,
+                                    mensaje:
+                                      "El correo o el documento de identidad ingresado ya se encuentra registrado",
+                                  });
+                                } else {
+                                  connection.destroy();
+                                  res.send({
+                                    error: true,
+                                    mensaje:
+                                      "Lo sentimos, ha ocurrido un error, intente de nuevo",
+                                  });
+                                }
                               } else {
-                                connection.destroy();
-                                res.send({
-                                  error: false,
-                                });
+
+                                res.cookie('documentoPPE', documento);
+                                res.cookie('passPPE', password);
+                          
+                                switch(rol){
+                                  case 'profesor':
+                                     res.send({
+                                       error: false,
+                                       redirect: '/signup/profesor'
+                                     });
+                                  break;
+
+                                  case 'estudiante':
+                                    res.send({
+                                      error: false,
+                                      redirect: '/signup/estudiante'
+                                    });
+                                  break;
+
+                                  case 'directriz':
+                                    res.send({
+                                      error: false,
+                                      redirect: '/signup/directriz'
+                                    });
+                                  break;
+                                  
+                                  default:
+                                    res.send({
+                                      error: true,
+                                      mensaje: ''
+                                    });
+                                  break;
+                                }
                               }
                             }
                           );
@@ -162,8 +199,183 @@ router.post("/signup", (req, res) => {
   }
 });
 
+router.get('/signup/:rol', (req, res)=> {
+
+  let {rol} = req.params;
+
+  rol = rol.trim();
+
+  switch(rol){
+    case 'profesor':
+       res.render(); // renderizar formulario profesor
+    break;
+
+    case 'estudiante':
+      res.render(); // renderizar formulario estudiante
+    break;
+
+    case 'directriz':
+      res.render(); // renderizar formulario directriz
+    break;
+
+    default:
+      res.redirect('/PPE');
+    break;
+  }
+
+});
+
+router.post('signup/:rol', (req, res)=>{
+
+  let {rol} = req.body;
+  
+  switch(rol){
+    case 'profesor':
+       let {asignatura, gradosDictados} = req.body;
+
+       asignatura = asignatura.trim();
+       gradosDictados = gradosDictados.trim();
+
+       if(asignatura === '' || grado === ''){
+         res.send({
+           error: true,
+           mensaje: 'Porfavor rellene correctamente todos los campos'
+         });
+       }else{
+         if(validarSimbolosString(asignatura) && validarSimbolosString(gradosDictados)){
+          
+         }else{
+          res.send({
+            error: true,
+            mensaje: 'Porfavor no coloque simbolo no permitidos como !"#$%&/ etc'
+          });
+         }
+       }
+    break;
+
+    case 'estudiante':
+      let {grado} = req.body;
+      grado = grado.trim();
+
+      if(grado === ''){
+        res.send({
+          error: true,
+          mensaje: 'Porfavor rellene correctamente todos los campos.'
+        });
+      }else{
+        if(validarSimbolosString(grado)){
+          
+        } else {
+          res.send({
+            error: true,
+            mensaje: 'Porfavor no ingrese simbolos no permitiddos como !"#$%&/ etc'
+          })
+        }
+      }
+    break;
+
+    case 'directriz':
+      let {cargo} = req.body;
+
+      cargo = cargo.trim();
+
+      if(cargo === ''){
+        res.send({
+          error: true,
+          mensaje: 'Porfavor rellene correctamente todos los campos.'
+        });
+      }else{
+        if(validarSimbolosString(grado)){
+          
+        } else {
+          res.send({
+            error: true,
+            mensaje: 'Porfavor no ingrese simbolos no permitiddos como !"#$%&/ etc'
+          })
+        }
+      }
+    break;
+
+    default:
+      res.redirect('/PPE');
+    break;
+  }
+});
+
 router.post("/login", (req, res) => {
-  const { correo, pass } = req.body;
+  let { correo, password } = req.body;
+  
+  correo = correo.trim();
+  password = password.trim();
+
+  if(correo === '' || password === ''){
+    res.send({
+      error: true,
+      mensaje: 'Porfavor rellene correctamente todos los campos'
+    });
+  }else{
+    if(validarEmail(correo) && validarSimbolosString(correo)){
+      pool.getConnection((err, connection)=>{
+        if(err){
+          connection.destroy();
+          res.send({            
+            error: true,
+            mensaje: 'Ha ocurrido un error, intente de nuevo.'
+          });
+        }else{
+          
+          pool.query('SELECT * FROM usuarios_generales WHERE correoUsuario = ?', [
+            correo
+          ],(error, results)=>{
+            if(error){
+              connection.destroy();
+              res.send({
+                error: true,
+                mensaje: 'Ha ocurrido un error query correo.'
+              });
+            }else{
+              if(results.length == 0){
+                connection.destroy();
+                res.send({
+                  error: true,
+                  mensaje: 'Correo y/o contraseña incorrecto.'
+                });
+              }else{
+                bcrypt.compare(password, results[0].passUsuario, (err, coinciden)=>{
+                  if(err){
+                    connection.destroy();
+                    res.send({
+                      error: true,
+                      mensaje: 'Ha ocurrido un error bcrypt compare.'
+                    });
+                  }else{
+                    if(coinciden){
+                      connection.destroy();
+                      res.send({
+                        error: false
+                      });
+                    }else{
+                      connection.destroy();
+                      res.send({
+                        error: true,
+                        mensaje: 'Correo y/o contraseña incorrecto'
+                      });
+                    }
+                  }
+                });
+              }
+            }
+          });
+        }
+      });
+    }
+    else{
+      res.send({
+        error: true,
+        mesaje: 'Su correo es invalido o contiene simbolos no permitidos.'
+      });
+    }
+  }
 });
 
 module.exports = router;

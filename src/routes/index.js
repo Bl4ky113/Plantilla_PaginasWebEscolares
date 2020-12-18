@@ -3,16 +3,7 @@ const router = express.Router();
 const cookieParser = require('cookie-parser');
 const pool = require('../dbUsuarios');
 
-router.get('/home', (req, res)=>{
-    // pool.getConnection(()=>{
-
-    // });
-    res.render('home/home', {
-        results
-    });
-});
-
-router.get('/contactos', (req, res)=>{
+router.get('/PPE', ()=> {
 
 });
 

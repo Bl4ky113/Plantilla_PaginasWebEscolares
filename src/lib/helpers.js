@@ -30,7 +30,7 @@ function validarSimbolosString (string){
 
 function validarEmail (email){ 
 if(email.indexOf(".") > 0 && email.indexOf("@")){
-    return true; //le dejo la cosa esta abierta pa que pueda programar, ahora si byee
+    return true;
 }else{
     return false;
 }
