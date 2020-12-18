@@ -6,8 +6,6 @@ El proyecto consiste en formar una plantilla para las paginas web de **instituci
 
 ## Objetivos del Proyecto:
 
-);
-
 * Para todos los Usuarios:
   * [ ] Tener Pagina Principal.
   * [ ] Tener Pagina de Anuncios.
@@ -52,15 +50,14 @@ Este equipo se encarga de todo aspecto y funcionalidad visual del proyecto, form
     -  Github: ThomSok;
     -  Twitter: @ThomSok_twt;
 
-    * #### María Valentina Carvajal:
-      - Tel: +57 3053256894;
-      - Correo Personal: valecame0904@gmail.com;
+  * #### María Valentina Carvajal:
+    - Tel: +57 3053256894;
+    - Correo Personal: valecame0904@gmail.com;
 
-    * #### Samuel Rico Osorio:
-      - Tel: +57 304 6562874;
-      - Correo Personal: samuelricoosorio@gmail.com;
-      - Github: SamuelRico;
-      
+  * #### Samuel Rico Osorio:
+    - Tel: +57 304 6562874;
+    - Correo Personal: samuelricoosorio@gmail.com;
+    - Github: SamuelRico;
 
   * ...
 
@@ -68,7 +65,7 @@ Este equipo se encarga de todo aspecto y funcionalidad visual del proyecto, form
 
 Este equpo se encarga de todo aspecto y funcionalidad de la funcionalidad de la parte no visual del proyecto (servidor, dominio web, base de datos, entre otros):
 
-* ### Desarrolladores:
+* ### Desarrolladores Backend:
   * #### Alex Santiago Durango:
     - Tel: +57 3154770872;
     - Correo Personal: alex.durango2303@gmail.com;
