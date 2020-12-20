@@ -4,7 +4,11 @@ const cookieParser = require('cookie-parser');
 const pool = require('../dbUsuarios');
 
 router.get('/home', (req, res)=>{
-    res.send('hola mundo, en home');
+  //render(hbs, {style: true||false})
+    res.render('home/home', {
+        showStyleNav: true,
+        showStyleFooter: true,
+    });
 });
 
 router.get('/contactos', (req, res)=>{
@@ -17,6 +21,11 @@ router.get('/anuncios', (req, res)=>{
 
 router.get('/guias', (req, res)=>{
     res.send('hola mundo, en guias');
+});
+
+router.get('/signup', (req, res)=>{
+    res.render('home/signup');
+
 });
 
 module.exports = router;
