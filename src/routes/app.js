@@ -6,7 +6,7 @@ const pool = require('../dbUsuarios');
 router.get('/home', (req, res)=>{
   //render(hbs, {style: true||false})
     res.render('home/home', {
-        showStyleNav: true,
+        showStyleHeader: true,
         showStyleFooter: true,
     });
 });

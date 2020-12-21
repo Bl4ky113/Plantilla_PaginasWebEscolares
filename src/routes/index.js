@@ -4,13 +4,13 @@ const cookieParser = require('cookie-parser');
 const pool = require('../dbUsuarios');
 
 router.get('/PPE', ()=> {
-
+  alert("Plantillas Gratuitas Para Instituciones Academicas");
 });
 
 /* TODOS LOS ARCHIVOS HTML COMO TAL, van a estar dentro de la carptea views.. y los archivos
 de CSS o JS van a estar dentro de la carpeta public
 
-el javascript del fronted esta 
+el javascript del fronted esta
 
 */
 
