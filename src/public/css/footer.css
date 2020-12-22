@@ -1,4 +1,4 @@
-
+* {outline: solid 1px tomato !important;}
 /* CSS Variables */
 
 :root{
@@ -15,7 +15,7 @@ footer {
 
   position: fixed;
   bottom: 0;
-  
+
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -25,20 +25,38 @@ footer p {margin: 0px;}
 /* ---------- Mini Nav ---------- */
 
 .div_miniNav {
-  width: 100%;
-
+  --height_miniNav: 24px;
+  height: var(--height_miniNav);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 
   background-color: var(--color_claro);
-}
 
-.div_miniNav p {
-  padding: 5px 10px;
-
+  text-align: center;
   text-transform: capitalize;
   font-size: 12px;
 }
+
+.div_miniNav p {
+  width: 20%;
+
+  margin-left: 25%;
+  padding: 5px 0px;
+
+  float: left;
+
+}
+
+.div_miniNav nav {
+  height: var(--height_miniNav);
+  width: 30%;
+
+  margin-right: 25%;
+
+  float: right;
+}
+
+/* Iconos & Links */
 
 /* ---------- Content ---------- */
 
@@ -57,7 +75,7 @@ footer p {margin: 0px;}
   height: 30px;
 
   text-align: center;
-  
+
   border-top: 2px solid var(--copy_grey);
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
