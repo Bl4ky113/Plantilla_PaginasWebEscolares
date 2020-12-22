@@ -47,7 +47,6 @@ footer p {margin: 0px;}
   padding: 5px 0px;
 
   float: left;
-
 }
 
 .div_miniNav nav {
@@ -87,9 +86,7 @@ footer p {margin: 0px;}
 
 /* ---------- Content ---------- */
 
-.content {
-  background-color: var(--color_oscuro);
-}
+.content {background-color: var(--color_oscuro);}
 
 /* ---------- School's Info ---------- */
 
@@ -150,48 +147,3 @@ footer p {margin: 0px;}
 
   color: var(--color_base);
 }
-/*html {
-    min-height: 100%;
-    position: relative;
-}
-
-body {
-    margin: 0;
-    margin-bottom: 40px;
-}
-
-footer {
-    height: 75px;
-    line-height: 50px;
-    width: 100%;
-
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    position:absolute;
-    bottom:0;
-    left: 0;
-
-    background-color: springgreen;
-    box-shadow: 2px -2px 3px rgba(51, 51, 51, 0.541);
-
-    color: #fff;
-    font-family: arial,helvetica;
-    font-weight: bolder;
-    text-shadow: 0px 0px 2px #333;
-}
-
-#copyright {
-    /*Continuar con el código
-    width: 50%;
-
-    padding: 5px 20px;
-    margin: outset 1px rgb(0, 51, 0);
-    border: solid 1px red;
-
-    background-color: rgb(26, 102, 0, );
-
-    text-align: center;
-
-
-}
-*/

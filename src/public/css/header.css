@@ -1,62 +1,69 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
+*{
+  font-family: Calibri;
 }
-body {
-  background: url("Añadir Imagen");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100vw 100vh;
-}
-.enca {
-  /*Aqui editas el color del encabezado*/
-  background: springgreen;
-  overflow: hidden;
+
+/* Header overall Style */
+
+header{
   width: 100%;
-  margin-bottom: 20px;
+  overflow: hidden;
+  
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-
-  box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.541);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+  
 }
-.wrapper {
+
+/*header > div {
   width: 90%;
   max-width: 1180px;
-  margin: auto;
   overflow: hidden;
-}
-.logo {
-  color: #fff;
-  font-size: 50px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  line-height: 70px;
-  float: left;
-}
-.left {
-  float: left;
-  width: auto;
-}
-.logotext{
-  font-weight: bolder;
-}
-.logotext, .left *{
+
+  margin: auto;
+}*/
+
+/* Font del titulo & Nav */
+
+.nombreColegio, .menuNav {
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 1px 1px 3px #333 ;
   text-decoration: none;
   text-decoration-color: none;
 }
-nav {
-  position: relative;
+
+/* ---------- Titulo / Nombre Colegio ---------- */
+
+.nombreColegio {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.541);
+  
+  background-color: var(--color_oscuro);
+
+  color: #fff;
+  line-height: 70px;
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.nombreColegio a {
+  font-weight: bolder;
+}
+
+.left {
+  float: left;
+  width: auto;
+}
+
+.menuNav {
+  position: right;
   left: 620px;
   top: 5px;
+  margin-left: 600px;
+  
 }
-nav a {
+.menuNav a {
   color: #fff;
   display: inline-block;
   text-decoration: none;
@@ -67,7 +74,8 @@ nav a {
   font-size: 16px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-}
+  
+} */
 .left *:hover{
   color: deepskyblue;
   border-bottom: 5px solid deepskyblue;
