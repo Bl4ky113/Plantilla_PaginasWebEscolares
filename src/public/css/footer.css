@@ -1,4 +1,110 @@
-html {
+
+/* CSS Variables */
+
+:root{
+  /* Var Colors */
+  --color_base: rgb(102, 102, 255);
+  --color_oscuro: rgba(0, 0, 102, 1);
+  --color_claro: rgba(153, 153, 255, 1);
+}
+
+/* Footer Overall Style */
+
+footer {
+  width: 100%;
+
+  position: fixed;
+  bottom: 0;
+  
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer p {margin: 0px;}
+
+/* ---------- Mini Nav ---------- */
+
+.div_miniNav {
+  width: 100%;
+
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  background-color: var(--color_claro);
+}
+
+.div_miniNav p {
+  padding: 5px 10px;
+
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+/* ---------- Content ---------- */
+
+.content {
+  background-color: var(--color_oscuro);
+}
+
+/* ---------- School's Info ---------- */
+
+/* ---------- Copyright --------- */
+
+.div_copyright {
+  --fondo_copy: rgb(30, 30, 30);
+  --copy_grey: rgba(95, 95, 95, 0.4);
+
+  height: 30px;
+
+  text-align: center;
+  
+  border-top: 2px solid var(--copy_grey);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+
+  background-color: var(--fondo_copy);
+
+}
+
+
+.div_copyright p, .div_copyright a {
+  margin: 5px 10px;
+
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* Texto Copyright */
+
+.div_copyright .text_copy {
+  height: 100%;
+  width: 48%;
+
+  margin-left: 1%;
+  border-right: 2px dashed var(--copy_grey);
+  border-left: 2px dashed var(--copy_grey);
+
+  float: left;
+}
+
+/* Nav Copyright */
+
+.div_copyright .contact {
+  height: 100%;
+  width: 48%;
+
+  margin-right: 1%;
+  border-left: 2px dashed var(--copy_grey);
+  border-right: 2px dashed var(--copy_grey);
+
+  float: right;
+}
+
+.div_copyright .contact a{
+  font-size: 20px;
+  color:white;
+}
+/*html {
     min-height: 100%;
     position: relative;
 }
@@ -12,24 +118,24 @@ footer {
     height: 75px;
     line-height: 50px;
     width: 100%;
-    
+
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     position:absolute;
     bottom:0;
     left: 0;
-    
+
     background-color: springgreen;
     box-shadow: 2px -2px 3px rgba(51, 51, 51, 0.541);
 
-    color:  #fff;
+    color: #fff;
     font-family: arial,helvetica;
     font-weight: bolder;
     text-shadow: 0px 0px 2px #333;
 }
 
 #copyright {
-    /*Continuar con el código */
+    /*Continuar con el código
     width: 50%;
 
     padding: 5px 20px;
@@ -42,11 +148,4 @@ footer {
 
 
 }
-
-/*
-
-rgb(102, 255, 51) Primario
-rgb(26, 102, 0) Secundario
-rgb(0, 51, 0) Bordes
-
 */
