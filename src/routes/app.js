@@ -20,7 +20,11 @@ const upload = multer({
 
 
 router.get('/home', (req, res)=>{
-    res.render('home/home', {ght: true});
+  //render(hbs, {style: true||false})
+    res.render('home/home', {
+        showStyleNav: true,
+        showStyleFooter: true,
+    });
 });
 
 
