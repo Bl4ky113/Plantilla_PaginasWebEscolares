@@ -1,4 +1,3 @@
-* {outline: solid 1px tomato !important;}
 /* CSS Variables */
 
 :root{
@@ -26,7 +25,9 @@ footer p {margin: 0px;}
 
 .div_miniNav {
   --height_miniNav: 24px;
-  height: var(--height_miniNav);
+
+  height: 24px;
+
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 
@@ -36,6 +37,8 @@ footer p {margin: 0px;}
   text-transform: capitalize;
   font-size: 12px;
 }
+
+/* Centrando el Texto y el Nav */
 
 .div_miniNav p {
   width: 20%;
@@ -48,7 +51,7 @@ footer p {margin: 0px;}
 }
 
 .div_miniNav nav {
-  height: var(--height_miniNav);
+  height: inherit;
   width: 30%;
 
   margin-right: 25%;
@@ -57,6 +60,30 @@ footer p {margin: 0px;}
 }
 
 /* Iconos & Links */
+
+.div_miniNav a {
+  height: inherit;
+
+  margin: 0px 4px;
+  padding: 5px 0px;
+
+  color: white;
+  text-decoration: none;
+}
+
+.div_miniNav a:hover {
+  border: 1px solid var(--color_oscuro);
+
+  color: var(--color_oscuro);
+  text-decoration: underline;
+  text-decoration-color: var(--color_oscuro);
+}
+
+.div_miniNav .icono {
+  position: relative;
+  top: 4px;
+  bottom: 4px;
+}
 
 /* ---------- Content ---------- */
 
@@ -72,7 +99,7 @@ footer p {margin: 0px;}
   --fondo_copy: rgb(30, 30, 30);
   --copy_grey: rgba(95, 95, 95, 0.4);
 
-  height: 30px;
+  height: 20px;
 
   text-align: center;
 
@@ -85,12 +112,7 @@ footer p {margin: 0px;}
 }
 
 
-.div_copyright p, .div_copyright a {
-  margin: 5px 10px;
-
-  font-size: 15px;
-  text-decoration: none;
-}
+.div_copyright p, .div_copyright a {font-size: 14px;}
 
 /* Texto Copyright */
 
@@ -118,9 +140,15 @@ footer p {margin: 0px;}
   float: right;
 }
 
-.div_copyright .contact a{
-  font-size: 20px;
+.div_copyright .contact a {
   color:white;
+  text-decoration: none;
+}
+
+.div_copyright .contact a:hover {
+  border: 1px solid var(--color_base);
+
+  color: var(--color_base);
 }
 /*html {
     min-height: 100%;
