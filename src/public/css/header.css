@@ -1,68 +1,106 @@
-*{
-  font-family: Calibri;
-}
-
+* {outline: 1px solid lime !important;}
 /* Header overall Style */
 
 header{
   width: 100%;
   overflow: hidden;
-  
+
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
-  
-}
+  z-index: 5;
 
-/*header > div {
-  width: 90%;
-  max-width: 1180px;
-  overflow: hidden;
-
-  margin: auto;
-}*/
-
-/* Font del titulo & Nav */
-
-.nombreColegio, .menuNav {
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 1px 1px 3px #333 ;
   text-decoration: none;
   text-decoration-color: none;
 }
 
-/* ---------- Titulo / Nombre Colegio ---------- */
+/* ---------- Contenido Header ---------- */
 
-.nombreColegio {
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+.contenidoHeader {
+  height: 80px;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.541);
-  
+
+  background-color: var(--color_oscuro);
+}
+
+/* ---------- Ícono & Escudo Colegio ---------- */
+
+.escudo {
+  width: 15%;
+  height: 125px;
+
+  float: left;
+  z-index: 10;
+
   background-color: var(--color_oscuro);
 
-  color: #fff;
-  line-height: 70px;
-  font-size: 50px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0px 2%;
+  border: 2px solid var(--color_base);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.escudo a {
+
+}
+
+/* ---------- Titulo & Nombre Colegio ---------- */
+
+.nombreColegio {
+  float: left;
+
+  margin: 5px;
+  border: 2px solid var(--color_claro);
+  border-radius: 20px;
+  padding: 10px;
+  padding-right: 50%;
+
+  background-color: var(--color_claro);
 }
 
 .nombreColegio a {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bolder;
 }
 
-.left {
-  float: left;
-  width: auto;
+/* ---------- Menu Despegable ---------- */
+
+.menuDes {
+  float: right;
+
+  padding: 10px 6%;
 }
+
+.menuDes #menuBtn {
+  height: 60px;
+  width: 60px;
+
+  border: 1px solid var(--color_claro);
+  border-radius: 12px;
+
+  background-color: var(--color_claro);
+}
+
+/* ----- Ícono Menu ----- */
+
+#iconoBtn {padding: 20px 0px;}
+
+/* ---------- Menu Navigation ---------- */
 
 .menuNav {
   position: right;
   left: 620px;
   top: 5px;
   margin-left: 600px;
-  
 }
+
 .menuNav a {
   color: #fff;
   display: inline-block;
@@ -74,11 +112,7 @@ header{
   font-size: 16px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-  
-} */
-.left *:hover{
-  color: deepskyblue;
-  border-bottom: 5px solid deepskyblue;
+
 }
 /*Responsing Beta*/
 /* @media only screen and (min-width: 400px) and (max-width: 767px) {

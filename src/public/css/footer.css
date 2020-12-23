@@ -31,7 +31,7 @@ footer p {margin: 0px;}
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 
-  background-color: var(--color_claro);
+  background-color: var(--color_base);
 
   text-align: center;
   text-transform: capitalize;
@@ -86,7 +86,7 @@ footer p {margin: 0px;}
 
 /* ---------- Content ---------- */
 
-.content {background-color: var(--color_oscuro);}
+.contentFooter {background-color: var(--color_oscuro);}
 
 /* ---------- School's Info ---------- */
 
@@ -98,14 +98,13 @@ footer p {margin: 0px;}
 
   height: 20px;
 
-  text-align: center;
-
   border-top: 2px solid var(--copy_grey);
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 
   background-color: var(--fondo_copy);
 
+  text-align: center;
 }
 
 
