@@ -33,7 +33,7 @@
   width: 20%;
 
   margin-left: 25%;
-  padding: 5px 0px;
+  padding: 5px 0;
 
   float: left;
 }
@@ -52,8 +52,8 @@
 .link-redsocial{
   height: inherit;
 
-  margin: 0px 4px;
-  padding: 5px 0px;
+  margin: 0 4px;
+  padding: 5px 0;
 
   color: white;
   text-decoration: none;

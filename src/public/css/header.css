@@ -39,7 +39,7 @@
 
   background-color: var(--color_oscuro);
 
-  margin: 0px 2%;
+  margin: 0 2%;
   border: 2px solid var(--color_base);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -93,7 +93,7 @@
 .iconoBtn__linea {
   height: 10px;
 
-  margin: 5px 0px;
+  margin: 5px 0;
   border: 1px solid var(--color_oscuro);
   border-radius: 10px;
 
