@@ -1,0 +1,22 @@
+/* ---------- CSS GLOBAL Variables ---------- */
+
+:root{
+  /* Var Colors */
+  --color_base: rgb(102, 102, 255);
+  --color_oscuro: rgba(0, 0, 102, 1);
+  --color_claro: rgba(153, 153, 255, 1);
+}
+
+/* ---------- Restart Style ---------- */
+
+body{
+  margin: 0px;
+  border: 0px none black;
+  padding: 0px;
+}
+
+p {
+  margin: 0px;
+  border: 0px none black;
+  padding: 0px;
+}

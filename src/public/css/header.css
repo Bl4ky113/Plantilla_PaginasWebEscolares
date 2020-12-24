@@ -1,7 +1,7 @@
 * {outline: 1px solid lime !important;}
-/* Header overall Style */
+/* ---------- Header overall Style ---------- */
 
-header{
+.header {
   width: 100%;
   overflow: hidden;
 
@@ -30,7 +30,7 @@ header{
 
 /* ---------- Ícono & Escudo Colegio ---------- */
 
-.escudo {
+.iconoColegio {
   width: 15%;
   height: 125px;
 
@@ -45,25 +45,25 @@ header{
   border-bottom-right-radius: 15px;
 }
 
-.escudo a {
-
+.iconoColegio__escudo {
+  /* Cuando se ponga el png */
 }
 
 /* ---------- Titulo & Nombre Colegio ---------- */
 
-.nombreColegio {
+.titulo {
   float: left;
 
   margin: 5px;
-  border: 2px solid var(--color_claro);
+  border: 2px solid var(--color_base);
   border-radius: 20px;
   padding: 10px;
   padding-right: 50%;
 
-  background-color: var(--color_claro);
+  background-color: var(--color_base);
 }
 
-.nombreColegio a {
+.titulo__nombreColegio{
   color: #fff;
   font-size: 40px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -72,25 +72,37 @@ header{
 
 /* ---------- Menu Despegable ---------- */
 
-.menuDes {
+.divBtn {
   float: right;
 
   padding: 10px 6%;
 }
 
-.menuDes #menuBtn {
+.divBtn .menuBtn {
   height: 60px;
   width: 60px;
 
-  border: 1px solid var(--color_claro);
+  border: 1px solid var(--color_base);
   border-radius: 12px;
 
-  background-color: var(--color_claro);
+  background-color: var(--color_base);
 }
 
 /* ----- Ícono Menu ----- */
 
-#iconoBtn {padding: 20px 0px;}
+.iconoBtn__linea {
+  height: 10px;
+
+  margin: 5px 0px;
+  border: 1px solid var(--color_oscuro);
+  border-radius: 10px;
+
+  background-color: var(--color_oscuro);
+}
+
+/* ---------- Menu Despegable ---------- */
+
+
 
 /* ---------- Menu Navigation ---------- */
 

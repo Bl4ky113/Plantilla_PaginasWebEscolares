@@ -1,15 +1,6 @@
-/* CSS Variables */
-
-:root{
-  /* Var Colors */
-  --color_base: rgb(102, 102, 255);
-  --color_oscuro: rgba(0, 0, 102, 1);
-  --color_claro: rgba(153, 153, 255, 1);
-}
-
 /* Footer Overall Style */
 
-footer {
+.footer {
   width: 100%;
 
   position: fixed;
@@ -19,11 +10,9 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-footer p {margin: 0px;}
-
 /* ---------- Mini Nav ---------- */
 
-.div_miniNav {
+.contenedor-miniNav {
   --height_miniNav: 24px;
 
   height: 24px;
@@ -40,7 +29,7 @@ footer p {margin: 0px;}
 
 /* Centrando el Texto y el Nav */
 
-.div_miniNav p {
+.contenedor-miniNav__texto {
   width: 20%;
 
   margin-left: 25%;
@@ -49,7 +38,7 @@ footer p {margin: 0px;}
   float: left;
 }
 
-.div_miniNav nav {
+.miniNav {
   height: inherit;
   width: 30%;
 
@@ -60,7 +49,7 @@ footer p {margin: 0px;}
 
 /* Iconos & Links */
 
-.div_miniNav a {
+.link-redsocial{
   height: inherit;
 
   margin: 0px 4px;
@@ -70,7 +59,7 @@ footer p {margin: 0px;}
   text-decoration: none;
 }
 
-.div_miniNav a:hover {
+.link-redsocial:hover {
   border: 1px solid var(--color_oscuro);
 
   color: var(--color_oscuro);
@@ -78,7 +67,7 @@ footer p {margin: 0px;}
   text-decoration-color: var(--color_oscuro);
 }
 
-.div_miniNav .icono {
+.link-redsocial__icono {
   position: relative;
   top: 4px;
   bottom: 4px;
@@ -86,13 +75,14 @@ footer p {margin: 0px;}
 
 /* ---------- Content ---------- */
 
-.contentFooter {background-color: var(--color_oscuro);}
+.contenidoFooter {background-color: var(--color_oscuro);}
 
 /* ---------- School's Info ---------- */
 
+
 /* ---------- Copyright --------- */
 
-.div_copyright {
+.contenedor-copy {
   --fondo_copy: rgb(30, 30, 30);
   --copy_grey: rgba(95, 95, 95, 0.4);
 
@@ -108,11 +98,11 @@ footer p {margin: 0px;}
 }
 
 
-.div_copyright p, .div_copyright a {font-size: 14px;}
+.contenedor-textoCopy__texto, .contenedor-contacto__link {font-size: 14px;}
 
 /* Texto Copyright */
 
-.div_copyright .text_copy {
+.contenedor-textoCopy {
   height: 100%;
   width: 48%;
 
@@ -123,9 +113,9 @@ footer p {margin: 0px;}
   float: left;
 }
 
-/* Nav Copyright */
+/* Nav Contacto */
 
-.div_copyright .contact {
+.contenedor-contacto {
   height: 100%;
   width: 48%;
 
@@ -136,12 +126,12 @@ footer p {margin: 0px;}
   float: right;
 }
 
-.div_copyright .contact a {
+.contenedor-contacto__link {
   color:white;
   text-decoration: none;
 }
 
-.div_copyright .contact a:hover {
+.contenedor-contacto__link:hover {
   border: 1px solid var(--color_base);
 
   color: var(--color_base);
