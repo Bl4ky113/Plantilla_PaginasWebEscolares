@@ -55,12 +55,6 @@ Este equipo se encarga de todo aspecto y funcionalidad visual del proyecto, form
     - Correo Personal: juaneste687@gmail.com;
     - Github: JuanEs-az;
 
-
-  * #### María Valentina Carvajal:
-    - Tel: +57 3053256894;
-    - Correo Personal: valecame0904@gmail.com;
-    - Github: valecame0904;
-
   * #### Samuel Rico Osorio:
     - Tel: +57 304 6562874;
     - Correo Personal: samuelricoosorio@gmail.com;
