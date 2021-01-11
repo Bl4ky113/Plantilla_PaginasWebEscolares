@@ -36,25 +36,55 @@
   float: left;
 }
 
-.miniNav {
-  height: inherit;
-  width: 30%;
+/*La miniNav de aqui es innecesaria*/
+/* .miniNav {
+  width: 30%; 
 
   margin-right: 25%;
 
-  float: right;
-}
+  float: right; 
+} */
 
 /* Iconos & Links */
 
-.link-redsocial{
-  height: inherit;
+/*Cambios en los links de redes sociales- Elkin :D*/
+.miniNav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
 
+  height: inherit;
+}
+
+.link-redsocial {
+  height: inherit;
   margin: 0 4px;
   padding: 5px 0;
 
   color: white;
   text-decoration: none;
+  transition: 0.5s all;
+}
+
+.link-redsocial__icono {
+  position: relative;
+  top: 4px;
+  bottom: 4px;
+}
+.link-redsocial:hover {
+  border: 1px solid rebeccapurple;
+  border-bottom: none;
+  color: var(--color_oscuro);
+  background-color: mediumpurple;
+  text-decoration: none;
+  text-decoration-color: var(--color_oscuro);
+}
+/*Fin de los cambios de Elkin :D*/
+
+/* .link-redsocial {
+  
 }
 
 .link-redsocial:hover {
@@ -66,17 +96,21 @@
 }
 
 .link-redsocial__icono {
-  position: relative;
+  position: absolute;
   top: 4px;
   bottom: 4px;
 }
+.link-redsocial__icono > img {
+  position: absolute;
+} */
 
 /* ---------- Content ---------- */
 
-.contenidoFooter {background-color: var(--color_oscuro);}
+.contenidoFooter {
+  background-color: var(--color_oscuro);
+}
 
 /* ---------- School's Info ---------- */
-
 
 /* ---------- Copyright --------- */
 
@@ -95,8 +129,10 @@
   text-align: center;
 }
 
-
-.contenedor-textoCopy__texto, .contenedor-contacto__link {font-size: 14px;}
+.contenedor-textoCopy__texto,
+.contenedor-contacto__link {
+  font-size: 14px;
+}
 
 /* Texto Copyright */
 
@@ -125,7 +161,7 @@
 }
 
 .contenedor-contacto__link {
-  color:white;
+  color: white;
   text-decoration: none;
 }
 
