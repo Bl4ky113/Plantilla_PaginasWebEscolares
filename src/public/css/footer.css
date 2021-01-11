@@ -13,8 +13,6 @@
 /* ---------- Mini Nav ---------- */
 
 .contenedor-miniNav {
-  --height_miniNav: 24px;
-
   height: 24px;
 
   border-top-right-radius: 10px;
