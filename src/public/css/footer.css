@@ -1,42 +1,41 @@
-/* Footer Overall Style */
+/* ----- Footer Style ----- */
 
-.footer {
+.doc-footer {
   width: 100%;
 
   position: fixed;
   bottom: 0;
-
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ---------- Mini Nav ---------- */
+/* ----- Mini Nav ----- */
 
-.contenedor-miniNav {
+.footer-divMiniNav {
   height: 24px;
 
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 
   background-color: var(--color_base);
-
-  text-align: center;
-  text-transform: capitalize;
-  font-size: 12px;
 }
 
-/* Centrando el Texto y el Nav */
-
-.contenedor-miniNav__texto {
+.footer-divMiniNav__texto {
   width: 20%;
 
   margin-left: 25%;
   padding: 5px 0;
 
   float: left;
+
+  font-size: 14px;
+  color: rgb(240, 240, 240); 
+  text-align: center;
+  text-transform: capitalize;
 }
 
-.miniNav {
+
+/* --- Mini Navigation Menu (Social Media) --- */
+
+.divMiniNav-miniNav {
   height: inherit;
   width: 30%;
 
@@ -45,19 +44,18 @@
   float: right;
 }
 
-/* Iconos & Links */
+/* - Links on Mini Navigation Menu - */
 
-.link-redsocial{
+.miniNav-linkRed{
   height: inherit;
 
   margin: 0 4px;
   padding: 5px 0;
 
-  color: white;
   text-decoration: none;
 }
 
-.link-redsocial:hover {
+.miniNav-linkRed:hover {
   border: 1px solid var(--color_oscuro);
 
   color: var(--color_oscuro);
@@ -65,22 +63,29 @@
   text-decoration-color: var(--color_oscuro);
 }
 
-.link-redsocial__icono {
+.miniNav-linkRed__icono {
   position: relative;
   top: 4px;
   bottom: 4px;
 }
 
+.miniNav-linkRed__texto{
+  font-size: 12px;
+  color: rgb(240, 240, 240); 
+  text-align: center;
+  text-transform: capitalize;
+}
+
 /* ---------- Content ---------- */
 
-.contenidoFooter {background-color: var(--color_oscuro);}
+.footer-content {background-color: var(--color_oscuro);}
 
-/* ---------- School's Info ---------- */
+/* ----- School's Info ----- */
 
 
-/* ---------- Copyright --------- */
+/* ----- Copyright ----- */
 
-.contenedor-copy {
+.content-copyright {
   --fondo_copy: rgb(30, 30, 30);
   --copy_grey: rgba(95, 95, 95, 0.4);
 
@@ -91,45 +96,49 @@
   border-top-left-radius: 5px;
 
   background-color: var(--fondo_copy);
-
-  text-align: center;
 }
 
+/* -- Copyright Text -- */
 
-.contenedor-textoCopy__texto, .contenedor-contacto__link {font-size: 14px;}
-
-/* Texto Copyright */
-
-.contenedor-textoCopy {
+.copyright-divCopyright__texto {
   height: 100%;
   width: 48%;
 
-  margin-left: 1%;
+  margin-left: auto;
   border-right: 2px dashed var(--copy_grey);
   border-left: 2px dashed var(--copy_grey);
 
   float: left;
+
+  color: rgb(240, 240, 240);
+  font-size: 14px;
+  text-align: center;
 }
 
-/* Nav Contacto */
+/* ----- Contact ----- */
 
-.contenedor-contacto {
+.content-contact {
   height: 100%;
   width: 48%;
 
-  margin-right: 1%;
+  margin-right: auto;
   border-left: 2px dashed var(--copy_grey);
   border-right: 2px dashed var(--copy_grey);
 
   float: right;
+
+  text-align: center;
 }
 
-.contenedor-contacto__link {
+/* -- Contact Links -- */
+
+.content-contact__link {
   color:white;
+  font-size: 14px;
   text-decoration: none;
 }
 
-.contenedor-contacto__link:hover {
+.content-contact__link:hover {
   border: 1px solid var(--color_base);
 
   color: var(--color_base);
