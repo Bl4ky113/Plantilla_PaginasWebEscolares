@@ -66,6 +66,7 @@
   border-right: 1px solid var(--color_blanco);
   border-left: 1px solid var(--color_blanco);
   border-radius: 0.25em;
+  padding: 2px 10px;
 
   background-color: var(--color_oscuro);
 
@@ -164,4 +165,5 @@
   padding: 0 5px;
 
   color: var(--color_base);
+  font-style: italic;
 }
