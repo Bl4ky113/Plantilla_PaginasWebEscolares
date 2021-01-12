@@ -31,19 +31,16 @@
   width: 20%;
 
   margin-left: 25%;
-  padding: 5px 0;
+  padding: 5px;
 
   float: left;
 }
 
-/*La miniNav de aqui es innecesaria*/
-/* .miniNav {
-  width: 30%; 
+.miniNav {
+  width: 35%; 
 
-  margin-right: 25%;
-
-  float: right; 
-} */
+  margin-right: auto;
+}
 
 /* Iconos & Links */
 
