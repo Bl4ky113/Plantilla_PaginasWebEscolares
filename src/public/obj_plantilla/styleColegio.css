@@ -4,19 +4,20 @@
   /* Var Colors */
   --color_base: rgb(102, 102, 255);
   --color_oscuro: rgba(0, 0, 102, 1);
-  --color_claro: rgba(153, 153, 255, 1);
+  --color_claro: rgba(173, 173, 255, 1);
+  --color_blanco: rgba(220, 220, 230, 1);
 }
 
 /* ---------- Restart Style ---------- */
 
 body{
   margin: 0;
-  border: 0 none black;
+  border: none;
   padding: 0;
 }
 
 p {
   margin: 0;
-  border: 0 none black;
+  border: none;
   padding: 0;
 }
