@@ -22,7 +22,7 @@
   width: 20%;
 
   margin-left: 25%;
-  padding: 5px 0;
+  padding: 5px;
 
   float: left;
 
@@ -37,39 +37,47 @@
 
 .divMiniNav-miniNav {
   height: inherit;
-  width: 30%;
+  width: 35%;
 
-  margin-right: 25%;
+  margin-right: auto;
 
-  float: right;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
 }
 
 /* - Links on Mini Navigation Menu - */
 
-.miniNav-linkRed{
-  height: inherit;
 
-  margin: 0 4px;
-  padding: 5px 0;
+.miniNav-linkRed{
+  height: 20px;
+  margin: 0 8px;
+  padding: 2px 0;
 
   text-decoration: none;
+  transition: 0.5s all;
 }
 
 .miniNav-linkRed:hover {
-  border: 1px solid var(--color_oscuro);
-
+  border: 1px solid rebeccapurple;
+  border-bottom: none;
   color: var(--color_oscuro);
-  text-decoration: underline;
+  background-color: mediumpurple;
+  text-decoration: none;
   text-decoration-color: var(--color_oscuro);
 }
 
-.miniNav-linkRed__icono {
-  position: relative;
+.miniNav-linkRed__icon {
+  position: reltaive;
   top: 4px;
   bottom: 4px;
 }
 
-.miniNav-linkRed__texto{
+/*Fin de los cambios de Elkin :D*/
+
+.miniNav-linkRed__text{
   font-size: 12px;
   color: rgb(240, 240, 240); 
   text-align: center;
