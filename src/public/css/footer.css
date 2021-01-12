@@ -28,7 +28,7 @@
   float: left;
 
   font-size: 14px;
-  color: rgb(240, 240, 240); 
+  color: var(--color_blanco); 
   text-align: center;
   text-transform: capitalize;
 }
@@ -82,7 +82,7 @@
 /* Text */
 .miniNav-linkRed__text {
   font-size: 12px;
-  color: rgb(240, 240, 240); 
+  color: var(--color_blanco); 
   text-align: center;
   text-transform: capitalize;
 
@@ -129,7 +129,7 @@
 
   float: left;
 
-  color: rgb(240, 240, 240);
+  color: var(--color_blanco);
   font-size: 14px;
   text-align: center;
 }
@@ -152,13 +152,16 @@
 /* -- Contact Links -- */
 
 .content-contact__link {
-  color:white;
+  color: var(--color_blanco);
   font-size: 14px;
   text-decoration: none;
+
+  transition: 0.5s all;
 }
 
 .content-contact__link:hover {
   border: 1px solid var(--color_base);
+  padding: 0 5px;
 
   color: var(--color_base);
 }

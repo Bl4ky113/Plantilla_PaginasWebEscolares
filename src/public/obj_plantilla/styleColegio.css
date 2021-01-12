@@ -21,3 +21,11 @@ p {
   border: none;
   padding: 0;
 }
+
+address {
+  margin: 0;
+  border: none;
+  padding: 0;
+
+  font-style: normal;
+}
