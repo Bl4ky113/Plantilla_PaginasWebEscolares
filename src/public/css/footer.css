@@ -152,18 +152,22 @@
 
 /* -- Contact Links -- */
 
-.content-contact__link {
-  color: var(--color_blanco);
-  font-size: 14px;
-  text-decoration: none;
-
+.contact-link {
   transition: 0.5s all;
 }
 
-.content-contact__link:hover {
+.contact-link:hover {
   border: 1px solid var(--color_base);
   padding: 0 5px;
+}
 
+/* Contact Text */
+.contact-link__text {
+  color: var(--color_blanco);
+  font-size: 14px;  
+}
+
+.contact-link__text:hover {
   color: var(--color_base);
   font-style: italic;
 }
