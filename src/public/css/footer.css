@@ -3,7 +3,7 @@
 .doc-footer {
   width: 100%;
 
-  position: fixed;
+  position: absolute;
   bottom: 0;
 }
 

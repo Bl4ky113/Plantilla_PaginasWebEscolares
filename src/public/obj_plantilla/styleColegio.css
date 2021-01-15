@@ -1,11 +1,14 @@
 /* ---------- CSS GLOBAL Variables ---------- */
 
 :root{
-  /* Var Colors */
+  /* Vars of Colors */
   --color_base: rgb(102, 102, 255);
   --color_oscuro: rgba(0, 0, 102, 1);
   --color_claro: rgba(173, 173, 255, 1);
   --color_blanco: rgb(240, 240, 240);
+
+  /* Others Vars */
+  --velocidad_transition: all 500ms;
 }
 
 /* ---------- Restart Style ---------- */

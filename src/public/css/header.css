@@ -18,7 +18,7 @@
   overflow: hidden;
 }
 
-/* ---------- Contenido Header ---------- */
+/* ---------- Header Content ---------- */
 
 .header-content {
   height: 80px;
@@ -30,7 +30,7 @@
   background-color: var(--color_oscuro);
 }
 
-/* ----- Ícono & Escudo Colegio ----- */
+/* ----- Icon of the School ----- */
 
 .header-icon {
   width: 200px;
@@ -47,6 +47,7 @@
   border-bottom-right-radius: 15px;
 }
 
+/* -- Icon's link -- */
 .icon-link {
   height: 150px;
   width: 150px;
@@ -57,11 +58,12 @@
   margin: 10px 25px;
 }
 
+/* Icon's Image */
 .icon-link__image{ /* 150px x 150px */
   z-index: 10;
 }
 
-/* ----- Titulo & Nombre Colegio ----- */
+/* ----- Title or Name of the School ----- */
 
 .header-title {
   float: left;
@@ -75,6 +77,7 @@
   background-color: var(--color_base);
 }
 
+/* -- Title Text -- */
 .title-link__name{
   color: #fff;
   font-size: 40px;
@@ -82,7 +85,7 @@
   font-weight: bolder;
 }
 
-/* ----- Menu Despegable ----- */
+/* ----- Deployable Menu ----- */
 
 .header-divMenu {
   float: right;
@@ -90,7 +93,7 @@
   padding: 10px 6%;
 }
 
-/* ---- Menu Btn ---- */
+/* ---- Deployable-Menu Btn ---- */
 
 .divMenu-btn {
   height: 60px;
@@ -113,11 +116,11 @@
   background-color: var(--color_oscuro);
 }
 
-/* ---------- Menu Despegable ---------- */
+/* ----- Depoyable Menu ----- */
 
 
 
-/* ---------- Menu Navigation ---------- */
+/* ----- Navigation Menu ----- */
 
 .header-nav {
   width: 85%;
@@ -135,6 +138,7 @@
   background-color: var(--color_base);
 }
 
+/* -- Links on the Nav -- */
 .nav-link{
   margin: 2px 5%;
   padding: 10px 1%;
@@ -142,16 +146,20 @@
   float: right;
 
   display: block;
-  transition: all 500ms ease;
+  transition: var(--velocidad_transition);
 }
 
+/* Text on the Links */
 .nav-link__text{
   color: var(--color_blanco);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: normal;
+
+  transition: var(--velocidad_transition);
 }
+
 /*Responsing Beta*/
 /* @media only screen and (min-width: 400px) and (max-width: 767px) {
   .enca {
