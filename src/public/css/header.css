@@ -1,3 +1,5 @@
+*{outline: 1px solid darkgreen;}
+
 /* ---------- Header overall Style ---------- */
 
 .doc-header {
@@ -21,8 +23,8 @@
 .header-content {
   height: 80px;
 
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
   box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.541);
 
   background-color: var(--color_oscuro);
@@ -46,12 +48,17 @@
 }
 
 .icon-link {
+  height: 150px;
+  width: 150px;
+
   display: block;
+  z-index: 10;
+
   margin: 10px 25px;
-  
 }
 
 .icon-link__image{ /* 150px x 150px */
+  z-index: 10;
 }
 
 /* ----- Titulo & Nombre Colegio ----- */
@@ -75,13 +82,15 @@
   font-weight: bolder;
 }
 
-/* ---------- Menu Despegable ---------- */
+/* ----- Menu Despegable ----- */
 
 .header-divMenu {
   float: right;
 
   padding: 10px 6%;
 }
+
+/* ---- Menu Btn ---- */
 
 .divMenu-btn {
   height: 60px;
@@ -93,8 +102,7 @@
   background-color: var(--color_base);
 }
 
-/* ----- Icon Menu-Btn ----- */
-
+/* -- Icon Menu-Btn -- */
 .btn-icon__line {
   height: 10px;
 
@@ -112,24 +120,37 @@
 /* ---------- Menu Navigation ---------- */
 
 .header-nav {
-  width: 80%;
-  float: right;
-  background-color: khaki;
+  width: 85%;
+  height: 45px;
+
+  border-bottom-right-radius: 2em;
+  padding-top: 10px;
+
+  float: left;
+  position: absolute;
+  top: 70px;
+  
+  z-index: -10;
+
+  background-color: var(--color_base);
 }
 
+.nav-link{
+  margin: 2px 5%;
+  padding: 10px 1%;
+  
+  float: right;
+
+  display: block;
+  transition: all 500ms ease;
+}
 
 .nav-link__text{
-  padding: 20px 10px;
-
-  display: inline-block;
-  color: #fff;
-
+  color: var(--color_blanco);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: normal;
-
-  transition: all 500ms ease;
 }
 /*Responsing Beta*/
 /* @media only screen and (min-width: 400px) and (max-width: 767px) {

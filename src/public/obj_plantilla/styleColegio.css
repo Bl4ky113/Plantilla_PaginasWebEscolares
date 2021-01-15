@@ -5,7 +5,7 @@
   --color_base: rgb(102, 102, 255);
   --color_oscuro: rgba(0, 0, 102, 1);
   --color_claro: rgba(173, 173, 255, 1);
-  --color_blanco: rgba(220, 220, 230, 1);
+  --color_blanco: rgb(240, 240, 240);
 }
 
 /* ---------- Restart Style ---------- */
