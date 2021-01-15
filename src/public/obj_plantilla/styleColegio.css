@@ -8,7 +8,7 @@
   --color_blanco: rgb(240, 240, 240);
 
   /* Others Vars */
-  --velocidad_transition: all 500ms;
+  --velocidad_transition: all 500ms ease;
 }
 
 /* ---------- Restart Style ---------- */
