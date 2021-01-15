@@ -1,23 +1,24 @@
 /* ---------- Header overall Style ---------- */
 
-.header {
+.doc-header {
   width: 100%;
-  overflow: hidden;
-
+  
   position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
-
+  
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 1px 1px 3px #333 ;
   text-decoration: none;
   text-decoration-color: none;
+  
+  overflow: hidden;
 }
 
 /* ---------- Contenido Header ---------- */
 
-.contenidoHeader {
+.header-content {
   height: 80px;
 
   border-bottom-left-radius: 10px;
@@ -27,11 +28,11 @@
   background-color: var(--color_oscuro);
 }
 
-/* ---------- Ícono & Escudo Colegio ---------- */
+/* ----- Ícono & Escudo Colegio ----- */
 
-.iconoColegio {
-  width: 15%;
-  height: 125px;
+.header-icon {
+  width: 200px;
+  height: 175px;
 
   float: left;
   z-index: 10;
@@ -44,13 +45,17 @@
   border-bottom-right-radius: 15px;
 }
 
-.iconoColegio__escudo {
-  /* Cuando se ponga el png */
+.icon-link {
+  
 }
 
-/* ---------- Titulo & Nombre Colegio ---------- */
+.icon-link__image{
 
-.titulo {
+}
+
+/* ----- Titulo & Nombre Colegio ----- */
+
+.header-title {
   float: left;
 
   margin: 5px;
@@ -62,7 +67,7 @@
   background-color: var(--color_base);
 }
 
-.titulo__nombreColegio{
+.title-link__name{
   color: #fff;
   font-size: 40px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -71,13 +76,13 @@
 
 /* ---------- Menu Despegable ---------- */
 
-.divBtn {
+.header-divMenu {
   float: right;
 
   padding: 10px 6%;
 }
 
-.divBtn .menuBtn {
+.divMenu-btn {
   height: 60px;
   width: 60px;
 
@@ -87,9 +92,9 @@
   background-color: var(--color_base);
 }
 
-/* ----- Ícono Menu ----- */
+/* ----- Icon Menu-Btn ----- */
 
-.iconoBtn__linea {
+.btn-icon__line {
   height: 10px;
 
   margin: 5px 0;
@@ -105,25 +110,25 @@
 
 /* ---------- Menu Navigation ---------- */
 
-.menuNav {
-  position: right;
-  left: 620px;
-  top: 5px;
-  margin-left: 600px;
+.header-nav {
+  width: 80%;
+  float: right;
+  background-color: khaki;
 }
 
-.menuNav a {
-  color: #fff;
+
+.nav-link__text{
+  padding: 20px 10px;
+
   display: inline-block;
-  text-decoration: none;
+  color: #fff;
+
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  padding: 20px 10px;
-  line-height: normal;
   font-size: 16px;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
+  line-height: normal;
 
+  transition: all 500ms ease;
 }
 /*Responsing Beta*/
 /* @media only screen and (min-width: 400px) and (max-width: 767px) {
