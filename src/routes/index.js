@@ -1,17 +1,14 @@
 const express = require('express');
 const router = express.Router();
-const cookieParser = require('cookie-parser');
-const pool = require('../dbUsuarios');
+const pool = require('../dbPPE');
 
-router.get('/PPE', ()=> {
-  alert("Plantillas Gratuitas Para Instituciones Academicas");
+router.get('/PPE', (req, res)=> {
+  res.send("Plantillas Gratuitas Para Instituciones Academicas");
 });
 
-/* TODOS LOS ARCHIVOS HTML COMO TAL, van a estar dentro de la carptea views.. y los archivos
-de CSS o JS van a estar dentro de la carpeta public
-
-el javascript del fronted esta
-
-*/
+router.get('/logout', (req, res)=>{
+  localStorage.removeItem('token');
+  res.send('token eliminado');
+});
 
 module.exports = router;
