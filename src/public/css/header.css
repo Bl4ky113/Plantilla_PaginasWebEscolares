@@ -64,13 +64,13 @@
 /* ----- Title or Name of the School ----- */
 
 .header-title {
+  width: 70%;
   float: left;
 
   margin: 5px;
   border: 2px solid var(--color_base);
-  border-radius: 20px;
+  border-radius: 0.5em;
   padding: 10px;
-  padding-right: 50%;
 
   background-color: var(--color_base);
 }
@@ -83,33 +83,57 @@
   font-weight: bolder;
 }
 
-/* ----- Deployable Menu ----- */
+/* ----- DeployableMenu & Btn ----- */
 
 .header-divMenu {
-  float: right;
+  height: 80px;
+  width: 8%;
 
-  padding: 10px 6%;
+  float: right;
 }
 
 /* ---- Deployable-Menu Btn ---- */
 
 .divMenu-btn {
-  height: 60px;
+  height: 75%;
   width: 60px;
 
+  margin: 10px auto;
   border: 1px solid var(--color_base);
-  border-radius: 12px;
+  border-radius: 0.25em;
 
   background-color: var(--color_base);
+
+  display: block;
 }
 
-/* -- Icon Menu-Btn -- */
-.btn-icon__line {
-  height: 10px;
+/* Icon Menu-Btn */
+.btn-icon__dot {
+  height: 7px;
+  width: 7px;
 
-  margin: 5px 0;
+  margin-top: 6%;
+  margin-right: 2px;
+  margin-bottom: 6%;
   border: 1px solid var(--color_oscuro);
-  border-radius: 10px;
+  border-radius: 5em;
+
+  background-color: var(--color_oscuro);
+
+  float: left;
+
+}
+
+.btn-icon__line {
+  height: 7px;
+  width: 30px;
+
+  margin-top: 6%;
+  margin-bottom: 6%;
+  border: 1px solid var(--color_oscuro);
+  border-radius: 0.25em;
+
+  float: left;
 
   background-color: var(--color_oscuro);
 }
@@ -169,6 +193,7 @@
 
 .nav-link__text:hover {
   color: var(--color_claro);
+  text-decoration: underline var(--color_claro) solid;  
 }
 
 /*Responsing Beta*/
