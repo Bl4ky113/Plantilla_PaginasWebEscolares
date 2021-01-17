@@ -1,0 +1,213 @@
+/* ---------- Header overall Style ---------- */
+
+.doc-header {
+  width: 100%;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 3px #333 ;
+  text-decoration: none;
+  text-decoration-color: none;
+  
+  overflow: hidden;
+}
+
+/* ---------- Header Content ---------- */
+
+.header-content {
+  height: 80px;
+
+  border-bottom-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+  box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.541);
+
+  background-color: var(--color_oscuro);
+}
+
+/* ----- Icon of the School ----- */
+
+.header-icon {
+  width: 200px;
+  height: 175px;
+
+  float: left;
+  z-index: 10;
+
+  background-color: var(--color_oscuro);
+
+  margin: 0 2%;
+  border: 2px solid var(--color_base);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* -- Icon's link -- */
+.icon-link {
+  height: 150px;
+  width: 150px;
+
+  display: block;
+  z-index: 10;
+
+  margin: 10px 25px;
+}
+
+/* Icon's Image */
+.icon-link__image { /* 150px x 150px */
+  z-index: 10;
+}
+
+/* ----- Title or Name of the School ----- */
+
+.header-title {
+  width: 70%;
+  float: left;
+
+  margin: 5px;
+  border: 2px solid var(--color_base);
+  border-radius: 0.5em;
+  padding: 10px;
+
+  background-color: var(--color_base);
+}
+
+/* -- Title Text -- */
+.title-link__name {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+}
+
+/* ----- DeployableMenu & Btn ----- */
+
+.header-divMenu {
+  height: 80px;
+  width: 8%;
+
+  float: right;
+}
+
+/* ---- Deployable-Menu Btn ---- */
+
+.divMenu-btn {
+  height: 75%;
+  width: 60px;
+
+  margin: 10px auto;
+  border: 1px solid var(--color_base);
+  border-radius: 0.25em;
+
+  background-color: var(--color_base);
+
+  display: block;
+}
+
+/* Icon Menu-Btn */
+.btn-icon__dot {
+  height: 7px;
+  width: 7px;
+
+  margin-top: 6%;
+  margin-right: 2px;
+  margin-bottom: 6%;
+  border: 1px solid var(--color_oscuro);
+  border-radius: 5em;
+
+  background-color: var(--color_oscuro);
+
+  float: left;
+
+}
+
+.btn-icon__line {
+  height: 7px;
+  width: 30px;
+
+  margin-top: 6%;
+  margin-bottom: 6%;
+  border: 1px solid var(--color_oscuro);
+  border-radius: 0.25em;
+
+  float: left;
+
+  background-color: var(--color_oscuro);
+}
+
+/* ----- Depoyable Menu ----- */
+
+
+
+/* ----- Navigation Menu ----- */
+
+.header-nav {
+  width: 85%;
+  height: 45px;
+
+  border-bottom-right-radius: 2em;
+  padding-top: 10px;
+
+  float: left;
+  position: absolute;
+  top: 70px;
+  
+  z-index: -10;
+
+  background-color: var(--color_base);
+}
+
+/* -- Links on the Nav -- */
+.nav-link {
+  margin: 2px 5%;
+  padding: 10px 1%;
+  
+  float: right;
+
+  display: block;
+  transition: var(--velocidad_transition), border 250ms linear;
+}
+
+.nav-link:hover {
+  border: 1px solid var(--color_claro);
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-radius: 0.5em;
+
+  background-color: var(--color_oscuro);
+}
+
+/* Text on the Links */
+.nav-link__text {
+  color: var(--color_blanco);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: normal;
+
+  transition: var(--velocidad_transition);
+}
+
+.nav-link__text:hover {
+  color: var(--color_claro);
+  text-decoration: underline var(--color_claro) solid;  
+}
+
+/*Responsing Beta*/
+/* @media only screen and (min-width: 400px) and (max-width: 767px) {
+  .enca {
+    height: 70px;
+  }
+  .logo {
+    font-size: 300px;
+    margin-left: 130;
+    margin-top: -15px;
+  }
+  nav {
+    margin-top: -40px;
+    transform: translateX(-3%);
+  }
+} */
