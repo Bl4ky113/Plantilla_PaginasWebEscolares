@@ -3,7 +3,8 @@ const router = express.Router();
 const pool = require('../../dbPPE');
 const { verifyToken } = require('../../lib/helpers');
 
-router.get('/home', verifyToken,(req, res) => {
+//Quitado  verifyToken para sencilles al momento de hacer el Dessign (18/01)
+router.get('/home',(req, res) => {
   res.render('home/home', {
     title: 'home',
   });
