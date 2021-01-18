@@ -57,7 +57,7 @@
       
       transition: 0.5s all;
   
-      &:hover {
+      &:hover, &:focus {
         border-right: 1px solid var(--color_blanco);
         border-left: 1px solid var(--color_blanco);
         border-radius: 0.25em;
@@ -84,7 +84,7 @@
       
         transition: 0.5s all;
   
-        &:hover {
+        &:hover, &:focus{
           color: var(--color_claro);
           text-decoration: underline;
           text-decoration-color: var(--color_base);
@@ -152,7 +152,7 @@
     /* -- Contact Links -- */
     transition: 0.5s all;
     
-    &:hover {
+    &:hover, &:focus {
       border: 1px solid var(--color_base);
       padding: 0 5px;
     }
@@ -163,7 +163,7 @@
       font-size: 14px;  
       transition: 0.5s all;
     
-      &:hover {
+      &:hover, &:focus {
         color: var(--color_base);
         font-style: italic;
       }

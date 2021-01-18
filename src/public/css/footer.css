@@ -37,7 +37,7 @@
       padding: 2px 4px;
       text-decoration: none;
       transition: 0.5s all; }
-      .footer-divMiniNav .divMiniNav-miniNav .miniNav-linkRed:hover {
+      .footer-divMiniNav .divMiniNav-miniNav .miniNav-linkRed:hover, .footer-divMiniNav .divMiniNav-miniNav .miniNav-linkRed:focus {
         border-right: 1px solid var(--color_blanco);
         border-left: 1px solid var(--color_blanco);
         border-radius: 0.25em;
@@ -56,7 +56,7 @@
         text-align: center;
         text-transform: capitalize;
         transition: 0.5s all; }
-        .footer-divMiniNav .divMiniNav-miniNav .miniNav-linkRed .miniNav-linkRed__text:hover {
+        .footer-divMiniNav .divMiniNav-miniNav .miniNav-linkRed .miniNav-linkRed__text:hover, .footer-divMiniNav .divMiniNav-miniNav .miniNav-linkRed .miniNav-linkRed__text:focus {
           color: var(--color_claro);
           text-decoration: underline;
           text-decoration-color: var(--color_base); }
@@ -100,7 +100,7 @@
   .content-contact .contact-link {
     /* -- Contact Links -- */
     transition: 0.5s all; }
-    .content-contact .contact-link:hover {
+    .content-contact .contact-link:hover, .content-contact .contact-link:focus {
       border: 1px solid var(--color_base);
       padding: 0 5px; }
     .content-contact .contact-link .contact-link__text {
@@ -108,6 +108,6 @@
       color: var(--color_blanco);
       font-size: 14px;
       transition: 0.5s all; }
-      .content-contact .contact-link .contact-link__text:hover {
+      .content-contact .contact-link .contact-link__text:hover, .content-contact .contact-link .contact-link__text:focus {
         color: var(--color_base);
         font-style: italic; }

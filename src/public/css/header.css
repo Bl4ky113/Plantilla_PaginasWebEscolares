@@ -113,11 +113,12 @@
     display: block;
     transition: var(--velocidad_transition), border 250ms linear;
     /* Text on the Links */ }
-    .header-nav .nav-link:hover {
+    .header-nav .nav-link:hover, .header-nav .nav-link:focus {
       border: 1px solid var(--color_claro);
       border-left-width: 2px;
       border-right-width: 2px;
       border-radius: 0.5em;
+      outline: none;
       background-color: var(--color_oscuro); }
     .header-nav .nav-link .nav-link__text {
       color: var(--color_blanco);
@@ -126,7 +127,8 @@
       font-size: 16px;
       line-height: normal;
       transition: var(--velocidad_transition); }
-      .header-nav .nav-link .nav-link__text:hover {
+      .header-nav .nav-link .nav-link__text:hover, .header-nav .nav-link .nav-link__text:focus {
+        outline: none;
         color: var(--color_claro);
         text-decoration: underline var(--color_claro) solid; }
 

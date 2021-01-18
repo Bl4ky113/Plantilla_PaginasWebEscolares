@@ -135,7 +135,9 @@
   }
 
   /* ----- Depoyable Menu ----- */
-
+  .divMenu-dropMenu {
+    
+  }
 }
 
 /* ----- Navigation Menu ----- */
@@ -164,8 +166,8 @@
   
     display: block;
     transition: var(--velocidad_transition), border 250ms linear;
-    
-    &:hover {
+
+    &:hover, &:focus {
       border: 1px solid var(--color_claro);
       border-left-width: 2px;
       border-right-width: 2px;
@@ -184,7 +186,7 @@
     
       transition: var(--velocidad_transition);
       
-      &:hover {
+      &:hover, &:focus {
         color: var(--color_claro);
         text-decoration: underline var(--color_claro) solid;  
       }
