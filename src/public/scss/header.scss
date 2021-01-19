@@ -11,8 +11,6 @@
   text-shadow: 1px 1px 3px #333 ;
   text-decoration: none;
   text-decoration-color: none;
-  
-  overflow: hidden;
 }
 
 /* ----- Header Content ----- */
@@ -25,120 +23,148 @@
   box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.541);
 
   background-color: var(--color_oscuro);
-}
 
-/* ----- Icon of the School ----- */
-
-.header-icon {
-  width: 200px;
-  height: 175px;
-
-  float: left;
-  z-index: 10;
-
-  background-color: var(--color_oscuro);
-
-  margin: 0 2%;
-  border: 2px solid var(--color_base);
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  /* ----- Icon of the School ----- */
   
-  .icon-link {
-    /* -- Icon's link -- */
-    height: 150px;
-    width: 150px;
+  .header-icon {
+    width: 200px;
+    height: 175px;
   
-    display: block;
+    float: left;
     z-index: 10;
-  
-    margin: 10px 25px;
-
-    .icon-link__image { /* 150px x 150px */
-      /* Icon's Image */
+    
+    background-color: var(--color_oscuro);
+    
+    margin: 0 2%;
+    border: 2px solid var(--color_base);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+    .icon-link {
+      /* -- Icon's link -- */
+      height: 150px;
+      width: 150px;
+      
+      display: block;
       z-index: 10;
+    
+      margin: 10px 25px;
+      
+      .icon-link__image { /* 150px x 150px */
+        /* Icon's Image */
+        z-index: 10;
+      }
     }
   }
-}
-
-/* ----- Title or Name of the School ----- */
-
-.header-title {
-  width: 70%;
-  float: left;
-
-  margin: 5px;
-  border: 2px solid var(--color_base);
-  border-radius: 0.5em;
-  padding: 10px;
-
-  background-color: var(--color_base);
   
-  .title-link__name {
-    /* -- Title Text -- */
-    color: #fff;
-    font-size: 40px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-weight: bolder;
-  }
-}
-
-/* ----- DeployableMenu & Btn ----- */
-
-.header-divMenu {
-  height: 80px;
-  width: 8%;
-
-  float: right;
+  /* ----- Title or Name of the School ----- */
   
-  /* ---- Deployable-Menu Btn ---- */
-  .divMenu-btn {
-    height: 75%;
-    width: 60px;
+  .header-title {
+    width: 70%;
+    float: left;
   
-    margin: 10px auto;
-    border: 1px solid var(--color_base);
-    border-radius: 0.25em;
+    margin: 5px;
+    border: 2px solid var(--color_base);
+    border-radius: 0.5em;
+    padding: 10px;
   
     background-color: var(--color_base);
-  
-    display: block;
     
-    /* Icon Menu-Btn */
-    .btn-icon__dot {
-      height: 7px;
-      width: 7px;
-    
-      margin-top: 6%;
-      margin-right: 2px;
-      margin-bottom: 6%;
-      border: 1px solid var(--color_oscuro);
-      border-radius: 5em;
-    
-      background-color: var(--color_oscuro);
-    
-      float: left;
-    
-    }
-    .btn-icon__line {
-      height: 7px;
-      width: 30px;
-    
-      margin-top: 6%;
-      margin-bottom: 6%;
-      border: 1px solid var(--color_oscuro);
-      border-radius: 0.25em;
-    
-      float: left;
-    
-      background-color: var(--color_oscuro);
+    .title-link__name {
+      /* -- Title Text -- */
+      color: #fff;
+      font-size: 40px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      font-weight: bolder;
     }
   }
 
-  /* ----- Depoyable Menu ----- */
-  .divMenu-dropMenu {
+  /* ----- DeployableMenu & Btn ----- */
+  
+  .header-divMenu {
+    height: 80px;
+    width: 8%;
+  
+    float: right;
     
+    /* ---- Deployable-Menu Btn ---- */
+    .divMenu-btn {
+      height: 75%;
+      width: 60px;
+    
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: 25px;
+      margin-bottom: 0;
+      border: 1px solid var(--color_base);
+      border-radius: 0.25em;
+    
+      background-color: var(--color_base);
+    
+      display: block;
+      
+      /* Icon Menu-Btn */
+      .btn-icon__dot {
+        height: 7px;
+        width: 7px;
+      
+        margin-top: 6%;
+        margin-right: 2px;
+        margin-bottom: 6%;
+        border: 1px solid var(--color_oscuro);
+        border-radius: 5em;
+      
+        float: left;
+        
+        background-color: var(--color_oscuro);
+      }
+      .btn-icon__line {
+        height: 7px;
+        width: 30px;
+      
+        margin-top: 6%;
+        margin-bottom: 6%;
+        border: 1px solid var(--color_oscuro);
+        border-radius: 0.25em;
+      
+        float: left;
+      
+        background-color: var(--color_oscuro);
+      }
+    }
+  
+    /* ----- Depoyable Menu ----- */
+    .divMenu-dropMenu {
+      width: 300px;
+      height: 500px;
+  
+      border: 2.5px outset var(--color_oscuro);
+      border-top-left-radius: 1em;
+      border-bottom-left-radius: 1em;
+      padding: 10px;
+  
+      position: absolute;
+      right: 25px;
+  
+      background-color: var(--color_oscuro);
+  
+      display: block;
+      z-index: 50;
+  
+      .dropMenu-navAccount {
+        width: 90%;
+  
+        margin: 0 auto;
+        border-radius: 0.5em;
+        padding: 10px;
+  
+        background-color: var(--color_base);
+      }
+    }
   }
 }
+
+
 
 /* ----- Navigation Menu ----- */
 
