@@ -46,8 +46,8 @@
     align-items: baseline;
   
     
+    /* - Links on Mini Navigation Menu - */
     .miniNav-linkRed{
-      /* - Links on Mini Navigation Menu - */
       height: 20px;
     
       margin: 0 4px;
@@ -68,15 +68,15 @@
         text-decoration: none;
       }
       
+      /* Icons */
       .miniNav-linkRed__icon {
-        /* Icons */
         position: relative;
         top: 4px;
         bottom: 4px;
       }
       
+      /* Text */
       .miniNav-linkRed__text {
-        /* Text */
         font-size: 12px;
         color: var(--color_blanco); 
         text-align: center;
@@ -116,8 +116,8 @@
 
   background-color: var(--fondo_copy);
   
+  /* -- Copyright Text -- */
   .copyright-divCopyright__texto {
-    /* -- Copyright Text -- */
     height: 100%;
     width: 48%;
   
@@ -148,8 +148,8 @@
   text-align: center;
   
   
+  /* -- Contact Links -- */
   .contact-link {
-    /* -- Contact Links -- */
     transition: 0.5s all;
     
     &:hover, &:focus {
@@ -157,8 +157,8 @@
       padding: 0 5px;
     }
 
+    /* Contact Text */
     .contact-link__text {
-      /* Contact Text */
       color: var(--color_blanco);
       font-size: 14px;  
       transition: 0.5s all;

@@ -40,8 +40,8 @@
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     
+    /* -- Icon's link -- */
     .icon-link {
-      /* -- Icon's link -- */
       height: 150px;
       width: 150px;
       
@@ -50,8 +50,8 @@
     
       margin: 10px 25px;
       
+      /* Icon's Image */
       .icon-link__image { /* 150px x 150px */
-        /* Icon's Image */
         z-index: 10;
       }
     }
@@ -70,8 +70,8 @@
   
     background-color: var(--color_base);
     
+    /* -- Title Text -- */
     .title-link__name {
-      /* -- Title Text -- */
       color: #fff;
       font-size: 40px;
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -150,7 +150,11 @@
   
       display: block;
       z-index: 50;
-  
+      
+      /* -- 
+        Links To Sign In & Log In 
+        OR if loged in Account settings 
+      -- */
       .dropMenu-navAccount {
         width: 90%;
   
@@ -159,6 +163,83 @@
         padding: 10px;
   
         background-color: var(--color_base);
+
+        /* Text or title of the Navigation */
+        .dropMenu-navAccount__text {
+          padding-inline-start: 1%;
+
+          color: var(--color_blanco);
+          font-size: 24px;
+          font-weight: bold;
+        }
+        /* Separator of the title and the links */
+        .dropMenu-navAccount__separator {
+          width: 100%;
+
+          margin-block-start: 5px;
+          margin-block-end: 5px;
+          border: 1px outset var(--color_oscuro);
+          border-radius: 1em;
+        }
+        
+        /* - General Links or Others - */
+        .navAccount-link {
+          width: 80%;
+          
+          margin: 5px auto;
+          border-radius: 0.5em;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          
+          background-color: var(--color_claro);
+          
+          text-align: center;
+          
+          display: block;
+          transition: var(--velocidad_transition);
+
+          &:hover, &:focus {
+            width: 85%;
+
+            padding: 10px 0;
+          }
+
+          /* Text in the link */
+          .navAccount-link__text{
+            color: var(--color_blanco);
+            font-size: 18px;
+
+            transition: var(--velocidad_transition);
+
+            &:hover, &:focus {
+              color: var(--color_oscuro);
+              text-decoration: underline var(--color_oscuro);
+            }
+          }
+        }
+
+        /* Sign In Link */
+        .navAccount-link--signIn {
+          width: 90%;
+
+          border-radius: 1em;
+
+          background-color: var(--color_oscuro);
+
+          &:hover, &:focus {
+            width: 95%;
+
+            padding: 10px 0;
+          }
+          .navAccount-link__text {
+            font-size: 20px;
+
+            &:hover, &:focus {
+              color: var(--color_claro);
+              text-decoration: underline var(--color_claro);
+            }
+          }
+        }
       }
     }
   }

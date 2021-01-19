@@ -29,17 +29,17 @@
     margin: 0 2%;
     border: 2px solid var(--color_base);
     border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px; }
+    border-bottom-right-radius: 15px;
+    /* -- Icon's link -- */ }
     .header-content .header-icon .icon-link {
-      /* -- Icon's link -- */
       height: 150px;
       width: 150px;
       display: block;
       z-index: 10;
-      margin: 10px 25px; }
+      margin: 10px 25px;
+      /* Icon's Image */ }
       .header-content .header-icon .icon-link .icon-link__image {
         /* 150px x 150px */
-        /* Icon's Image */
         z-index: 10; }
   .header-content .header-title {
     width: 70%;
@@ -48,9 +48,9 @@
     border: 2px solid var(--color_base);
     border-radius: 0.5em;
     padding: 10px;
-    background-color: var(--color_base); }
+    background-color: var(--color_base);
+    /* -- Title Text -- */ }
     .header-content .header-title .title-link__name {
-      /* -- Title Text -- */
       color: #fff;
       font-size: 40px;
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -103,13 +103,65 @@
       right: 25px;
       background-color: var(--color_oscuro);
       display: block;
-      z-index: 50; }
+      z-index: 50;
+      /* -- 
+        Links To Sign In & Log In 
+        OR if loged in Account settings 
+      -- */ }
       .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount {
         width: 90%;
         margin: 0 auto;
         border-radius: 0.5em;
         padding: 10px;
-        background-color: var(--color_base); }
+        background-color: var(--color_base);
+        /* Text or title of the Navigation */
+        /* Separator of the title and the links */
+        /* - General Links or Others - */
+        /* Sign In Link */ }
+        .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .dropMenu-navAccount__text {
+          padding-inline-start: 1%;
+          color: var(--color_blanco);
+          font-size: 24px;
+          font-weight: bold; }
+        .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .dropMenu-navAccount__separator {
+          width: 100%;
+          margin-block-start: 5px;
+          margin-block-end: 5px;
+          border: 1px outset var(--color_oscuro);
+          border-radius: 1em; }
+        .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link {
+          width: 80%;
+          margin: 5px auto;
+          border-radius: 0.5em;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          background-color: var(--color_claro);
+          text-align: center;
+          display: block;
+          transition: var(--velocidad_transition);
+          /* Text in the link */ }
+          .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link:hover, .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link:focus {
+            width: 85%;
+            padding: 10px 0; }
+          .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link .navAccount-link__text {
+            color: var(--color_blanco);
+            font-size: 18px;
+            transition: var(--velocidad_transition); }
+            .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link .navAccount-link__text:hover, .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link .navAccount-link__text:focus {
+              color: var(--color_oscuro);
+              text-decoration: underline var(--color_oscuro); }
+        .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link--signIn {
+          width: 90%;
+          border-radius: 1em;
+          background-color: var(--color_oscuro); }
+          .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link--signIn:hover, .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link--signIn:focus {
+            width: 95%;
+            padding: 10px 0; }
+          .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link--signIn .navAccount-link__text {
+            font-size: 20px; }
+            .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link--signIn .navAccount-link__text:hover, .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link--signIn .navAccount-link__text:focus {
+              color: var(--color_claro);
+              text-decoration: underline var(--color_claro); }
 
 /* ----- Navigation Menu ----- */
 .header-nav {
