@@ -108,28 +108,28 @@
         Links To Sign In & Log In 
         OR if loged in Account settings 
       -- */ }
-      .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount {
+      .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav {
         width: 90%;
-        margin: 0 auto;
+        margin: 10px auto;
         border-radius: 0.5em;
         padding: 10px;
         background-color: var(--color_base);
         /* Text or title of the Navigation */
         /* Separator of the title and the links */
         /* - General Links or Others - */
-        /* Sign In Link */ }
-        .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .dropMenu-navAccount__text {
+        /* Main Link */ }
+        .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropMenu-dropNav__text {
           padding-inline-start: 1%;
           color: var(--color_blanco);
           font-size: 24px;
           font-weight: bold; }
-        .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .dropMenu-navAccount__separator {
+        .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropMenu-dropNav__separator {
           width: 100%;
           margin-block-start: 5px;
           margin-block-end: 5px;
           border: 1px outset var(--color_oscuro);
           border-radius: 1em; }
-        .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link {
+        .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-link {
           width: 80%;
           margin: 5px auto;
           border-radius: 0.5em;
@@ -140,26 +140,27 @@
           display: block;
           transition: var(--velocidad_transition);
           /* Text in the link */ }
-          .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link:hover, .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link:focus {
+          .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-link:hover, .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-link:focus {
             width: 85%;
             padding: 10px 0; }
-          .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link .navAccount-link__text {
+          .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-link .dropNav-link__text {
             color: var(--color_blanco);
             font-size: 18px;
             transition: var(--velocidad_transition); }
-            .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link .navAccount-link__text:hover, .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link .navAccount-link__text:focus {
+            .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-link .dropNav-link__text:hover, .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-link .dropNav-link__text:focus {
               color: var(--color_oscuro);
               text-decoration: underline var(--color_oscuro); }
-        .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link--signIn {
+        .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-link--mainLink {
           width: 90%;
           border-radius: 1em;
-          background-color: var(--color_oscuro); }
-          .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link--signIn:hover, .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link--signIn:focus {
+          background-color: var(--color_oscuro);
+          /* Text in Sign In Link */ }
+          .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-link--mainLink:hover, .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-link--mainLink:focus {
             width: 95%;
             padding: 10px 0; }
-          .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link--signIn .navAccount-link__text {
+          .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-link--mainLink .dropNav-link__text {
             font-size: 20px; }
-            .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link--signIn .navAccount-link__text:hover, .header-content .header-divMenu .divMenu-dropMenu .dropMenu-navAccount .navAccount-link--signIn .navAccount-link__text:focus {
+            .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-link--mainLink .dropNav-link__text:hover, .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-link--mainLink .dropNav-link__text:focus {
               color: var(--color_claro);
               text-decoration: underline var(--color_claro); }
 

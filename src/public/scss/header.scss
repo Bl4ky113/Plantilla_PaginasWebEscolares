@@ -155,17 +155,17 @@
         Links To Sign In & Log In 
         OR if loged in Account settings 
       -- */
-      .dropMenu-navAccount {
+      .dropMenu-dropNav {
         width: 90%;
-  
-        margin: 0 auto;
+        
+        margin: 10px auto;
         border-radius: 0.5em;
         padding: 10px;
   
         background-color: var(--color_base);
 
         /* Text or title of the Navigation */
-        .dropMenu-navAccount__text {
+        .dropMenu-dropNav__text {
           padding-inline-start: 1%;
 
           color: var(--color_blanco);
@@ -173,7 +173,7 @@
           font-weight: bold;
         }
         /* Separator of the title and the links */
-        .dropMenu-navAccount__separator {
+        .dropMenu-dropNav__separator {
           width: 100%;
 
           margin-block-start: 5px;
@@ -183,7 +183,7 @@
         }
         
         /* - General Links or Others - */
-        .navAccount-link {
+        .dropNav-link {
           width: 80%;
           
           margin: 5px auto;
@@ -205,7 +205,7 @@
           }
 
           /* Text in the link */
-          .navAccount-link__text{
+          .dropNav-link__text{
             color: var(--color_blanco);
             font-size: 18px;
 
@@ -218,8 +218,8 @@
           }
         }
 
-        /* Sign In Link */
-        .navAccount-link--signIn {
+        /* Main Link */
+        .dropNav-link--mainLink {
           width: 90%;
 
           border-radius: 1em;
@@ -231,7 +231,8 @@
 
             padding: 10px 0;
           }
-          .navAccount-link__text {
+          /* Text in the important Link */
+          .dropNav-link__text {
             font-size: 20px;
 
             &:hover, &:focus {
@@ -240,6 +241,12 @@
             }
           }
         }
+
+        /* -- Hover Menu -- */
+        .dropNav-hoverMenu {
+    
+        }
+
       }
     }
   }
