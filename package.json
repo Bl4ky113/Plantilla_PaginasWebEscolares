@@ -4,7 +4,9 @@
   "description": "this is the server of PPE proyect",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/"
+    "dev": "nodemon src/",
+    "sass": "node-sass -w src/public/scss/ -o src/public/css/",
+    "m_sass": "node-sass -o src/public/css src/public/scss/"
   },
   "author": "",
   "license": "ISC",
