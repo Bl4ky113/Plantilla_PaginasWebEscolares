@@ -136,7 +136,7 @@
     /* ----- Depoyable Menu ----- */
     .divMenu-dropMenu {
       width: 300px;
-      height: 500px;
+      height: auto;
   
       border: 2.5px outset var(--color_oscuro);
       border-top-left-radius: 1em;
@@ -149,7 +149,7 @@
       background-color: var(--color_oscuro);
   
       display: block;
-      z-index: 50;
+      z-index: 1;
       
       /* -- 
         Links To Sign In & Log In 
@@ -182,7 +182,7 @@
           border-radius: 1em;
         }
         
-        /* - General Links or Others - */
+        /* -- General Links In the dropMenu -- */
         .dropNav-link {
           width: 80%;
           
@@ -218,7 +218,7 @@
           }
         }
 
-        /* Main Link */
+        /* -- Main Link in the dropMenu -- */
         .dropNav-link--mainLink {
           width: 90%;
 
@@ -242,11 +242,115 @@
           }
         }
 
-        /* -- Hover Menu -- */
-        .dropNav-hoverMenu {
-    
-        }
+        /* --- HoverMenu ---*/
+        /* Important Links with hoverMenus */
 
+        .dropNav-hoverMenu {
+          transition: var(--velocidad_transition);
+
+          &:hover, &:focus{
+            .hoverMenu-hoverContent {
+              height: 150px;
+
+              margin-top: 0;
+              margin-bottom: 5px;
+              margin-right: auto;
+              margin-left: auto;
+              border: 5px outset var(--color_oscuro);
+              border-radius: 1em;
+              padding: 2px;
+
+              background-color: var(--color_base);
+
+              visibility: visible;
+
+              .hoverContent-link{
+                display: block;
+
+                .hoverContent-link__text {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+
+          /* -- HoverMenu-MainLink -- */
+          .hoverMenu-link {
+            width: 85%;
+
+            margin-top: 5px;
+            margin-bottom: 0;
+            margin-right: auto;
+            margin-left: auto;
+            border-radius: 0.75em;
+            padding-top: 5px;
+            padding-bottom: 5px;
+  
+            background-color: var(--color_oscuro);
+            
+            text-align: center;
+
+            display: block;
+            transition: var(--velocidad_transition);
+            
+            &:hover, &:focus {
+              width: 90%;
+              padding-top: 10px;
+              padding-bottom: 10px;
+            }
+  
+            /* Text in the HoverMenu-MainLink */
+            .hoverMenu-link__text {
+              color: var(--color_blanco);
+              font-size: 20px;
+  
+              &:hover, &:focus {
+                color: var(--color_claro);
+                text-decoration: underline var(--color_claro);
+              }
+            }
+
+          }
+
+          /* -- HoverMenu-Content -- */
+          .hoverMenu-hoverContent {
+            width: 95%;
+            height: 0;
+
+            border-radius: 0.5em;
+
+            background-color: var(--color_oscuro);
+
+            transition: var(--velocidad_transition);
+            z-index: 10;
+            visibility: hidden; /* Hidden while not hover */
+
+            /* - Content-links */
+            .hoverContent-link {
+              width: 200px;
+
+              margin-top: 2px;
+              margin-bottom: 2px;
+              margin-right: auto;
+              margin-left: 5px;
+              border: 2px inset var(--color_oscuro);
+              border-radius: 0.5em;
+              padding-inline-start: 10px;
+
+              background-color: var(--color_base);
+
+              transition: var(--velocidad_transition);
+              display: none; /* Hidden while not hover */
+
+              /* Content-Link's text */
+              .hoverContent-link__text {
+                font-size: 20px;
+
+                opacity: 0; /* Hidden while not hover */
+              }
+            }
+          }
+        }
       }
     }
   }
