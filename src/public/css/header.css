@@ -76,29 +76,52 @@
       /* - Icon Menu-Btn - */
       /* Btn not active */
       /* Btn Active */ }
-      .header-content .header-divMenu .divMenu-btn .btn-icon .btn-icon__dot {
-        height: 7px;
-        width: 7px;
-        margin-top: 6%;
-        margin-right: 2px;
-        margin-bottom: 6%;
-        border: 1px solid var(--color_oscuro);
-        border-radius: 5em;
-        float: left;
-        background-color: var(--color_oscuro); }
-      .header-content .header-divMenu .divMenu-btn .btn-icon .btn-icon__line {
-        height: 7px;
-        width: 30px;
-        margin-top: 6%;
-        margin-bottom: 6%;
-        border: 1px solid var(--color_oscuro);
-        border-radius: 0.25em;
-        float: left;
-        background-color: var(--color_oscuro); }
-      .header-content .header-divMenu .divMenu-btn .btn-icon--active .btn-icon__dot {
-        opacity: 0; }
-      .header-content .header-divMenu .divMenu-btn .btn-icon--active .btn-icon__line {
-        background-color: red; }
+      .header-content .header-divMenu .divMenu-btn .btn-icon {
+        height: 70%;
+        width: 100%;
+        padding: 15% 0; }
+        .header-content .header-divMenu .divMenu-btn .btn-icon .icon-row {
+          width: 80%;
+          margin: 0 auto; }
+          .header-content .header-divMenu .divMenu-btn .btn-icon .icon-row .icon-row__dot {
+            height: 4px;
+            width: 4px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            margin-right: 2px;
+            float: left;
+            background-color: var(--color_oscuro);
+            transition: var(--velocidad_transition); }
+          .header-content .header-divMenu .divMenu-btn .btn-icon .icon-row .icon-row__line {
+            height: 4px;
+            width: 40px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            float: left;
+            background-color: var(--color_oscuro);
+            transition: var(--velocidad_transition); }
+      .header-content .header-divMenu .divMenu-btn .btn-icon--active .icon-row {
+        /* defalut Dots */
+        /* All lines */
+        /* hide Lines */
+        /* X lines (Right and left lines) */
+        /* upper and bottom lines in the x */ }
+        .header-content .header-divMenu .divMenu-btn .btn-icon--active .icon-row .icon-row__dot {
+          opacity: 0; }
+        .header-content .header-divMenu .divMenu-btn .btn-icon--active .icon-row .icon-row__line {
+          margin-right: auto;
+          margin-left: auto;
+          float: none; }
+        .header-content .header-divMenu .divMenu-btn .btn-icon--active .icon-row .icon-row--hidden__line {
+          opacity: 0; }
+        .header-content .header-divMenu .divMenu-btn .btn-icon--active .icon-row .icon-row--right__line {
+          transform: rotate(-45deg) translate(-12px, 10px); }
+        .header-content .header-divMenu .divMenu-btn .btn-icon--active .icon-row .icon-row--left__line {
+          transform: rotate(45deg) translate(-6px, -6px); }
+        .header-content .header-divMenu .divMenu-btn .btn-icon--active .icon-row .icon-row--upper__line {
+          transform: translateY(-6px); }
+        .header-content .header-divMenu .divMenu-btn .btn-icon--active .icon-row .icon-row--bottom__line {
+          transform: translateY(12px); }
     .header-content .header-divMenu .divMenu-dropMenu {
       width: 300px;
       height: auto;

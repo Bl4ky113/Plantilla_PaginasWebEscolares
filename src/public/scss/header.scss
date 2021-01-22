@@ -108,43 +108,79 @@
 
       /* Btn not active */
       .btn-icon {
-        .btn-icon__dot {
-          height: 7px;
-          width: 7px;
-        
-          margin-top: 6%;
-          margin-right: 2px;
-          margin-bottom: 6%;
-          border: 1px solid var(--color_oscuro);
-          border-radius: 5em;
-        
-          float: left;
-          
-          background-color: var(--color_oscuro);
-        }
+        height: 70%;
+        width: 100%;  
 
-        .btn-icon__line {
-          height: 7px;
-          width: 30px;
+        padding: 15% 0;
+
         
-          margin-top: 6%;
-          margin-bottom: 6%;
-          border: 1px solid var(--color_oscuro);
-          border-radius: 0.25em;
-        
-          float: left;
-        
-          background-color: var(--color_oscuro);
+        .icon-row{
+          width: 80%;
+          
+          margin: 0 auto;
+          
+          .icon-row__dot {
+            height: 4px;
+            width: 4px;
+            
+            margin-top: 2px;
+            margin-bottom: 2px;
+            margin-right: 2px;
+            
+            float: left;
+
+            background-color: var(--color_oscuro);
+
+            transition: var(--velocidad_transition);
+          }
+          
+          .icon-row__line {
+            height: 4px;
+            width: 40px;
+            
+            margin-top: 2px;
+            margin-bottom: 2px;
+            
+            float: left;
+            
+            background-color: var(--color_oscuro);
+
+            transition: var(--velocidad_transition);
+          }
         }
       }
       /* Btn Active */
       .btn-icon--active {
-        .btn-icon__dot {
-          opacity: 0;
-        }
+        .icon-row {
+          /* defalut Dots */
+          .icon-row__dot {
+            opacity: 0;
+          }
+          /* All lines */
+          .icon-row__line {
+            margin-right: auto;
+            margin-left: auto;
 
-        .btn-icon__line {
-          background-color: red;
+            float: none;
+          }
+          /* hide Lines */
+          .icon-row--hidden__line {
+            opacity: 0;
+          }
+          /* X lines (Right and left lines) */
+          .icon-row--right__line {
+            transform: rotate(-45deg) translate(-12px, 10px);
+          }
+          .icon-row--left__line {
+            transform: rotate(45deg) translate(-6px, -6px);
+          }
+          /* upper and bottom lines in the x */
+          .icon-row--upper__line {
+            transform: translateY(-6px);
+          }
+          .icon-row--bottom__line {
+            transform: translateY(12px);
+          }
         }
       }
     }
