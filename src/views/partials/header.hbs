@@ -16,7 +16,7 @@
       </div>
       <!-- Btn Menu Despegable -->
       <div class="header-divMenu">
-        <button class="divMenu-btn">
+        <button class="divMenu-btn" onclick="showDropMenu()">
           <!-- Ícono del Button -->
           <div class="btn-icon" onclick="changeBtnIcon(this);">
             <div class="icon-row">
@@ -39,7 +39,7 @@
           </div>
         </button>
         <!-- dropdown menu -->
-        <div class="divMenu-dropMenu">
+        <div id="dropdownMenu" class="divMenu-dropMenu">
           <!-- Links for Account Settings / Log-Sign In -->
           <nav class="dropMenu-dropNav">
             <span class="dropMenu-dropNav__text">Cuenta</span> 

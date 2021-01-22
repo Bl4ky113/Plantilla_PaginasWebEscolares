@@ -60,7 +60,8 @@
     width: 8%;
     float: right;
     /* ---- Deployable-Menu Btn ---- */
-    /* ----- Depoyable Menu ----- */ }
+    /* ----- Depoyable Menu ----- */
+    /* Show dropMenu */ }
     .header-content .header-divMenu .divMenu-btn {
       height: 75%;
       width: 60px;
@@ -72,6 +73,7 @@
       border-radius: 0.25em;
       background-color: var(--color_base);
       display: block;
+      transition: var(--velocidad_transition);
       cursor: pointer;
       /* - Icon Menu-Btn - */
       /* Btn not active */
@@ -102,26 +104,28 @@
             transition: var(--velocidad_transition); }
       .header-content .header-divMenu .divMenu-btn .btn-icon--active .icon-row {
         /* defalut Dots */
-        /* All lines */
         /* hide Lines */
         /* X lines (Right and left lines) */
         /* upper and bottom lines in the x */ }
         .header-content .header-divMenu .divMenu-btn .btn-icon--active .icon-row .icon-row__dot {
           opacity: 0; }
-        .header-content .header-divMenu .divMenu-btn .btn-icon--active .icon-row .icon-row__line {
-          margin-right: auto;
-          margin-left: auto;
-          float: none; }
         .header-content .header-divMenu .divMenu-btn .btn-icon--active .icon-row .icon-row--hidden__line {
           opacity: 0; }
         .header-content .header-divMenu .divMenu-btn .btn-icon--active .icon-row .icon-row--right__line {
-          transform: rotate(-45deg) translate(-12px, 10px); }
+          transform: rotate(-45deg) translate(-14px, 7px); }
         .header-content .header-divMenu .divMenu-btn .btn-icon--active .icon-row .icon-row--left__line {
-          transform: rotate(45deg) translate(-6px, -6px); }
+          transform: rotate(45deg) translate(-15px, -9px); }
         .header-content .header-divMenu .divMenu-btn .btn-icon--active .icon-row .icon-row--upper__line {
-          transform: translateY(-6px); }
+          transform: translate(-4px, -7px); }
         .header-content .header-divMenu .divMenu-btn .btn-icon--active .icon-row .icon-row--bottom__line {
-          transform: translateY(12px); }
+          transform: translate(-4px, 4px); }
+      .header-content .header-divMenu .divMenu-btn:hover, .header-content .header-divMenu .divMenu-btn:focus {
+        border-color: var(--color_base);
+        background-color: var(--color_oscuro); }
+        .header-content .header-divMenu .divMenu-btn:hover .btn-icon .icon-row .icon-row__dot, .header-content .header-divMenu .divMenu-btn:focus .btn-icon .icon-row .icon-row__dot {
+          background-color: var(--color_base); }
+        .header-content .header-divMenu .divMenu-btn:hover .btn-icon .icon-row .icon-row__line, .header-content .header-divMenu .divMenu-btn:focus .btn-icon .icon-row .icon-row__line {
+          background-color: var(--color_base); }
     .header-content .header-divMenu .divMenu-dropMenu {
       width: 300px;
       height: auto;
@@ -132,7 +136,7 @@
       position: absolute;
       right: 25px;
       background-color: var(--color_oscuro);
-      display: block;
+      display: none;
       z-index: 1;
       /* -- 
         Links To Sign In & Log In 
@@ -272,6 +276,8 @@
                 .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-hoverMenu .hoverMenu-hoverContent .hoverContent-link .hoverContent-link__text:hover {
                   color: var(--color_claro);
                   text-decoration: underline var(--color_claro); }
+    .header-content .header-divMenu .divMenu-dropMenu--visible {
+      display: block; }
 
 /* ----- Navigation Menu ----- */
 .header-nav {
