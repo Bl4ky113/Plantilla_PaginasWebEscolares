@@ -117,7 +117,7 @@
         /* Text or title of the Navigation */
         /* Separator of the title and the links */
         /* -- General Links In the dropMenu -- */
-        /* -- Main Link in the dropMenu -- */
+        /* -- Main or important Link in the dropMenu -- */
         /* --- HoverMenu ---*/
         /* Important Links with hoverMenus */ }
         .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropMenu-dropNav__text {
@@ -170,7 +170,7 @@
           /* -- HoverMenu-MainLink -- */
           /* -- HoverMenu-Content -- */ }
           .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-hoverMenu:hover .hoverMenu-hoverContent, .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-hoverMenu:focus .hoverMenu-hoverContent {
-            height: 150px;
+            height: 100px;
             margin-top: 0;
             margin-bottom: 5px;
             margin-right: auto;
@@ -178,7 +178,6 @@
             border: 5px outset var(--color_oscuro);
             border-radius: 1em;
             padding: 2px;
-            background-color: var(--color_base);
             visibility: visible; }
             .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-hoverMenu:hover .hoverMenu-hoverContent .hoverContent-link, .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-hoverMenu:focus .hoverMenu-hoverContent .hoverContent-link {
               display: block; }
@@ -200,8 +199,8 @@
             /* Text in the HoverMenu-MainLink */ }
             .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-hoverMenu .hoverMenu-link:hover, .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-hoverMenu .hoverMenu-link:focus {
               width: 90%;
-              padding-top: 10px;
-              padding-bottom: 10px; }
+              padding-top: 5px;
+              padding-bottom: 5px; }
             .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-hoverMenu .hoverMenu-link .hoverMenu-link__text {
               color: var(--color_blanco);
               font-size: 20px; }
@@ -219,23 +218,30 @@
             /* Hidden while not hover */
             /* - Content-links */ }
             .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-hoverMenu .hoverMenu-hoverContent .hoverContent-link {
-              width: 200px;
-              margin-top: 2px;
-              margin-bottom: 2px;
+              height: 25px;
+              width: 80%;
+              margin-top: 4px;
+              margin-bottom: 4px;
               margin-right: auto;
               margin-left: 5px;
-              border: 2px inset var(--color_oscuro);
-              border-radius: 0.5em;
+              border-radius: 0.25em;
               padding-inline-start: 10px;
               background-color: var(--color_base);
               transition: var(--velocidad_transition);
               display: none;
               /* Hidden while not hover */
               /* Content-Link's text */ }
+              .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-hoverMenu .hoverMenu-hoverContent .hoverContent-link:hover, .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-hoverMenu .hoverMenu-hoverContent .hoverContent-link:focus {
+                width: 90%; }
               .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-hoverMenu .hoverMenu-hoverContent .hoverContent-link .hoverContent-link__text {
+                color: var(--color_blanco);
                 font-size: 20px;
+                transition: var(--velocidad_transition);
                 opacity: 0;
                 /* Hidden while not hover */ }
+                .header-content .header-divMenu .divMenu-dropMenu .dropMenu-dropNav .dropNav-hoverMenu .hoverMenu-hoverContent .hoverContent-link .hoverContent-link__text:hover {
+                  color: var(--color_claro);
+                  text-decoration: underline var(--color_claro); }
 
 /* ----- Navigation Menu ----- */
 .header-nav {

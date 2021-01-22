@@ -218,7 +218,7 @@
           }
         }
 
-        /* -- Main Link in the dropMenu -- */
+        /* -- Main or important Link in the dropMenu -- */
         .dropNav-link--mainLink {
           width: 90%;
 
@@ -250,7 +250,7 @@
 
           &:hover, &:focus{
             .hoverMenu-hoverContent {
-              height: 150px;
+              height: 100px;
 
               margin-top: 0;
               margin-bottom: 5px;
@@ -259,8 +259,6 @@
               border: 5px outset var(--color_oscuro);
               border-radius: 1em;
               padding: 2px;
-
-              background-color: var(--color_base);
 
               visibility: visible;
 
@@ -295,8 +293,8 @@
             
             &:hover, &:focus {
               width: 90%;
-              padding-top: 10px;
-              padding-bottom: 10px;
+              padding-top: 5px;
+              padding-bottom: 5px;
             }
   
             /* Text in the HoverMenu-MainLink */
@@ -327,14 +325,14 @@
 
             /* - Content-links */
             .hoverContent-link {
-              width: 200px;
+              height: 25px;
+              width: 80%;
 
-              margin-top: 2px;
-              margin-bottom: 2px;
+              margin-top: 4px;
+              margin-bottom: 4px;
               margin-right: auto;
               margin-left: 5px;
-              border: 2px inset var(--color_oscuro);
-              border-radius: 0.5em;
+              border-radius: 0.25em;
               padding-inline-start: 10px;
 
               background-color: var(--color_base);
@@ -342,11 +340,22 @@
               transition: var(--velocidad_transition);
               display: none; /* Hidden while not hover */
 
+              &:hover, &:focus {
+                width: 90%;
+              }
+
               /* Content-Link's text */
               .hoverContent-link__text {
+                color: var(--color_blanco);
                 font-size: 20px;
 
+                transition: var(--velocidad_transition);
                 opacity: 0; /* Hidden while not hover */
+
+                &:hover {
+                  color: var(--color_claro);
+                  text-decoration: underline var(--color_claro);
+                }
               }
             }
           }
