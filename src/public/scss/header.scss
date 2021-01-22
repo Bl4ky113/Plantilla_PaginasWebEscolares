@@ -102,34 +102,50 @@
       background-color: var(--color_base);
     
       display: block;
+      cursor: pointer;
       
-      /* Icon Menu-Btn */
-      .btn-icon__dot {
-        height: 7px;
-        width: 7px;
-      
-        margin-top: 6%;
-        margin-right: 2px;
-        margin-bottom: 6%;
-        border: 1px solid var(--color_oscuro);
-        border-radius: 5em;
-      
-        float: left;
+      /* - Icon Menu-Btn - */
+
+      /* Btn not active */
+      .btn-icon {
+        .btn-icon__dot {
+          height: 7px;
+          width: 7px;
         
-        background-color: var(--color_oscuro);
+          margin-top: 6%;
+          margin-right: 2px;
+          margin-bottom: 6%;
+          border: 1px solid var(--color_oscuro);
+          border-radius: 5em;
+        
+          float: left;
+          
+          background-color: var(--color_oscuro);
+        }
+
+        .btn-icon__line {
+          height: 7px;
+          width: 30px;
+        
+          margin-top: 6%;
+          margin-bottom: 6%;
+          border: 1px solid var(--color_oscuro);
+          border-radius: 0.25em;
+        
+          float: left;
+        
+          background-color: var(--color_oscuro);
+        }
       }
-      .btn-icon__line {
-        height: 7px;
-        width: 30px;
-      
-        margin-top: 6%;
-        margin-bottom: 6%;
-        border: 1px solid var(--color_oscuro);
-        border-radius: 0.25em;
-      
-        float: left;
-      
-        background-color: var(--color_oscuro);
+      /* Btn Active */
+      .btn-icon--active {
+        .btn-icon__dot {
+          opacity: 0;
+        }
+
+        .btn-icon__line {
+          background-color: red;
+        }
       }
     }
   

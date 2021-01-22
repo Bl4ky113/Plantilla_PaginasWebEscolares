@@ -72,8 +72,11 @@
       border-radius: 0.25em;
       background-color: var(--color_base);
       display: block;
-      /* Icon Menu-Btn */ }
-      .header-content .header-divMenu .divMenu-btn .btn-icon__dot {
+      cursor: pointer;
+      /* - Icon Menu-Btn - */
+      /* Btn not active */
+      /* Btn Active */ }
+      .header-content .header-divMenu .divMenu-btn .btn-icon .btn-icon__dot {
         height: 7px;
         width: 7px;
         margin-top: 6%;
@@ -83,7 +86,7 @@
         border-radius: 5em;
         float: left;
         background-color: var(--color_oscuro); }
-      .header-content .header-divMenu .divMenu-btn .btn-icon__line {
+      .header-content .header-divMenu .divMenu-btn .btn-icon .btn-icon__line {
         height: 7px;
         width: 30px;
         margin-top: 6%;
@@ -92,6 +95,10 @@
         border-radius: 0.25em;
         float: left;
         background-color: var(--color_oscuro); }
+      .header-content .header-divMenu .divMenu-btn .btn-icon--active .btn-icon__dot {
+        opacity: 0; }
+      .header-content .header-divMenu .divMenu-btn .btn-icon--active .btn-icon__line {
+        background-color: red; }
     .header-content .header-divMenu .divMenu-dropMenu {
       width: 300px;
       height: auto;
